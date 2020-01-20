@@ -1,0 +1,37 @@
+
+README file for Programming Assignment 0: Stack
+================================================
+
+This directory contains the following files:
+
+ README
+ atoi.cl
+ stack.cl
+ stack.test
+
+    README this file
+
+	atoi.cl is an implementation in Cool of the string to integer
+	conversion function.
+
+	stack.cl is the template file which you should fill in with
+	your program.
+
+	stack.test is a short test input to the stack machine.
+
+
+Instructions
+------------
+
+    Make sure coolc and coolspim are on your PATH.
+
+    To compile your program type
+
+    % coolc stack.cl atoi.cl
+
+	To run your program on a short test provided, type:
+
+	% coolspim -file stack.s < stack.test
+
+    Try it now -- it should work, and print "Nothing implemented"
+    (among a few other things).

@@ -118,6 +118,7 @@ public class Frontend {
             } catch (IOException ex) {
                 Utilities.fatalError(Utilities.ErrorCode.EXCEPTION_LEXER, ex);
             } catch (Exception ex) {
+		ex.printStackTrace();
                 Utilities.fatalError(Utilities.ErrorCode.EXCEPTION_PARSER, ex);
             }
 

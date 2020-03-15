@@ -30,9 +30,9 @@ diff $results_refdir/$outname $results_outdir/$outname
 outdiffrc=$?
 if [ $outdiffrc -ne 0 ] ; then
     $filter $results_refdir/$outname > $results_refdir/$outname.filtered
-    sed -i -n '$!N; /^\(.*\)\n\1$/!P; D' $results_refdir/$outname.filtered
+    sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' $results_refdir/$outname.filtered
     $filter $results_outdir/$outname > $results_outdir/$outname.filtered
-    sed -i -n '$!N; /^\(.*\)\n\1$/!P; D' $results_outdir/$outname.filtered
+    sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' $results_outdir/$outname.filtered
     diff $results_refdir/$outname.filtered $results_outdir/$outname.filtered
     outdiffrc=$?
 fi
@@ -41,12 +41,20 @@ diff $results_refdir/$errname $results_outdir/$errname
 errdiffrc=$?
 if [ $errdiffrc -ne 0 ] ; then
     $filter $results_refdir/$errname > $results_refdir/$errname.filtered
-    sed -i '/Compilation halted due to static semantic errors./!d' $results_refdir/$errname.filtered
+    sed -i.bak '/Compilation halted due to static semantic errors./!d' $results_refdir/$errname.filtered
     $filter $results_outdir/$errname > $results_outdir/$errname.filtered
-    sed -i '/Compilation halted due to static semantic errors./!d' $results_outdir/$errname.filtered
+    sed -i.bak '/Compilation halted due to static semantic errors./!d' $results_outdir/$errname.filtered
     diff $results_refdir/$errname.filtered $results_outdir/$errname.filtered
     errdiffrc=$?
 fi
+
+# BSD and GNU sed expect different argumens for -i the only reasonably
+# portable invocation is `sed -i.bak`, which creates unwanted backup
+# files -- remove them
+rm $results_outdir/$outname.filtered.bak
+rm $results_refdir/$outname.filtered.bak
+rm $results_outdir/$errname.filtered.bak
+rm $results_refdir/$errname.filtered.bak
 
 if [ $refrc -eq 0 ] && [ $myrc -eq 0 ] ; then
     if [ $errdiffrc -ne 0 ] ; then

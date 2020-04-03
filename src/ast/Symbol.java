@@ -22,4 +22,8 @@ public class Symbol implements Tree {
     public <R,D> R accept(TreeVisitor<R,D> visitor, D data) {
         return visitor.visit(this, data);
     }
+
+    public String toString() {
+	return name;
+    }
 }

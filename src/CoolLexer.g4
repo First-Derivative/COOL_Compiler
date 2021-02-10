@@ -1,6 +1,3 @@
-/**
- * Define a lexer rules for Cool
- */
 lexer grammar CoolLexer;
 
 /* Comments */
@@ -47,51 +44,30 @@ fragment ESCAPE_CHARACTERS:
 	| '"';
 
 /* Keywords */
-fragment CLASS: [Cc] [Ll] [Aa] [Ss] [Ss];
-fragment ELSE: [Ee] [Ll] [Ss] [Ee];
-fragment FI: [Ff] [Ii];
-fragment IF: [Ii] [Ff];
-fragment IN: [Ii] [Nn];
-fragment INHERITS: [Ii] [Nn] [Hh] [Ee] [Rr] [Ii] [Tt] [Ss];
-fragment ISVOID: [Ii] [Ss] [Vv] [Oo] [Ii] [Dd];
-fragment LET: [Ll] [Ee] [Tt];
-fragment LOOP: [Ll] [Oo] [Oo] [Pp];
-fragment POOL: [Pp] [Oo] [Oo] [Ll];
-fragment THEN: [Tt] [Hh] [Ee] [Nn];
-fragment WHILE: [Ww] [Hh] [Ii] [Ll] [Ee];
-fragment CASE: [Cc] [Aa] [Ss] [Ee];
-fragment ESAC: [Ee] [Ss] [Aa] [Cc];
-fragment NEW: [Nn] [Ee] [Ww];
-fragment OF: [Oo] [Ff];
-fragment NOT: [Nn] [Oo] [Tt];
-fragment TRUE: 't' [Rr] [Uu] [Ee];
-fragment FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
+CLASS: [Cc] [Ll] [Aa] [Ss] [Ss];
+ELSE: [Ee] [Ll] [Ss] [Ee];
+FI: [Ff] [Ii];
+IF: [Ii] [Ff];
+IN: [Ii] [Nn];
+INHERITS: [Ii] [Nn] [Hh] [Ee] [Rr] [Ii] [Tt] [Ss];
+ISVOID: [Ii] [Ss] [Vv] [Oo] [Ii] [Dd];
+LET: [Ll] [Ee] [Tt];
+LOOP: [Ll] [Oo] [Oo] [Pp];
+POOL: [Pp] [Oo] [Oo] [Ll];
+THEN: [Tt] [Hh] [Ee] [Nn];
+WHILE: [Ww] [Hh] [Ii] [Ll] [Ee];
+CASE: [Cc] [Aa] [Ss] [Ee];
+ESAC: [Ee] [Ss] [Aa] [Cc];
+NEW: [Nn] [Ee] [Ww];
+OF: [Oo] [Ff];
+NOT: [Nn] [Oo] [Tt];
+TRUE: 't' [Rr] [Uu] [Ee];
+FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
 
-KEYWORD:
-	CLASS
-	| ELSE
-	| FI
-	| IF
-	| IN
-	| INHERITS
-	| ISVOID
-	| LET
-	| LOOP
-	| POOL
-	| THEN
-	| WHILE
-	| CASE
-	| ESAC
-	| NEW
-	| OF
-	| NOT
-	| TRUE
-	| FALSE;
+// KEYWORD: CLASS | ELSE | FI | IF | IN | INHERITS | ISVOID | LET | LOOP | POOL | THEN | WHILE |
+// CASE | ESAC | NEW | OF | NOT;
 
 /* VALUES */
-
-// check that string and comments supports empty
-
 STRING_CONST:
 	'"' (
 		'\\' ('\\' | '\t' | '\r\n' | '\r' | '\n' | '\"')
@@ -99,10 +75,13 @@ STRING_CONST:
 	)* '"';
 
 INT_CONST: '-'? DIGIT;
+BOOL_CONST: (TRUE | FALSE);
 
-IDENTIFIER: LETTER (LETTER_ | DIGIT)*;
+OBJECTID: [a-z] (LETTER_ | DIGIT)*;
+TYPEID: [A-Z] (LETTER_ | DIGIT)*;
 
 WS: (' ' | '\t' | '\n' | '\r' | '\u000B')+ -> skip;
 
-/* ERROR */
+// UNTERMINATED_STRING_CONSTANT: '"' ~[\r\n"]*; sNULL_IN_STRING: '"' .*? '\\0' .*? '"';
+
 ERROR: .;

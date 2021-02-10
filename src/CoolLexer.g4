@@ -61,27 +61,20 @@ ESAC: [Ee] [Ss] [Aa] [Cc];
 NEW: [Nn] [Ee] [Ww];
 OF: [Oo] [Ff];
 NOT: [Nn] [Oo] [Tt];
-TRUE: 't' [Rr] [Uu] [Ee];
-FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
 
-// KEYWORD: CLASS | ELSE | FI | IF | IN | INHERITS | ISVOID | LET | LOOP | POOL | THEN | WHILE |
-// CASE | ESAC | NEW | OF | NOT;
+fragment TRUE: 't' [Rr] [Uu] [Ee];
+fragment FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
 
 /* VALUES */
-STRING_CONST:
-	'"' (
-		'\\' ('\\' | '\t' | '\r\n' | '\r' | '\n' | '\"')
-		| ~('\\' | '\t' | '\r' | '\n' | '"')
-	)* '"';
+
+STRING_CONST: '"' (('\\'|'\t'|'\r\n'|'\r'|'\n'|'\\"') | ~('\\'|'\t'|'\r'|'\n'|'"'))* '"';
 
 INT_CONST: '-'? DIGIT;
 BOOL_CONST: (TRUE | FALSE);
 
-OBJECTID: [a-z] (LETTER_ | DIGIT)*;
+ID: [a-z] (LETTER_ | DIGIT)*;
 TYPEID: [A-Z] (LETTER_ | DIGIT)*;
 
 WS: (' ' | '\t' | '\n' | '\r' | '\u000B')+ -> skip;
-
-// UNTERMINATED_STRING_CONSTANT: '"' ~[\r\n"]*; sNULL_IN_STRING: '"' .*? '\\0' .*? '"';
 
 ERROR: .;

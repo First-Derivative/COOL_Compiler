@@ -1,5 +1,7 @@
 lexer grammar CoolLexer;
 
+// Missing support for null values, invalid multiline comments (comment without closing bracket)
+
 /* Comments */
 SINGLE_LINE_COMMENT: '--' ~[\r\n]* '\r'? '\n' -> skip;
 MULTI_LINE_COMMENT: '(*' .*? '*)' -> skip;
@@ -62,15 +64,18 @@ NEW: [Nn] [Ee] [Ww];
 OF: [Oo] [Ff];
 NOT: [Nn] [Oo] [Tt];
 
-fragment TRUE: 't' [Rr] [Uu] [Ee];
-fragment FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
-
+TRUE: 't' [Rr] [Uu] [Ee];
+FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
 /* VALUES */
 
-STRING_CONST: '"' (('\\'|'\t'|'\r\n'|'\r'|'\n'|'\\"') | ~('\\'|'\t'|'\r'|'\n'|'"'))* '"';
+STRING_CONST:
+	'"' (
+		('\\' | '\t' | '\r\n' | '\r' | '\n' | '\\"')
+		| ~('\\' | '\t' | '\r' | '\n' | '"')
+	)* '"';
 
 INT_CONST: '-'? DIGIT;
-BOOL_CONST: (TRUE | FALSE);
+// BOOL_CONST: (TRUE | FALSE);
 
 ID: [a-z] (LETTER_ | DIGIT)*;
 TYPEID: [A-Z] (LETTER_ | DIGIT)*;

@@ -4,7 +4,8 @@ lexer grammar CoolLexer;
 
 /* Comments */
 SINGLE_LINE_COMMENT: '--' ~[\r\n]* '\r'? '\n' -> skip;
-MULTI_LINE_COMMENT: '(*' .*? '*)' -> skip;
+MULTI_LINE_COMMENT:
+	'(*' (MULTI_LINE_COMMENT | .)*? '*)' -> skip;
 
 /* Punctution */
 PERIOD: '.';

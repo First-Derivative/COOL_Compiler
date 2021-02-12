@@ -1,6 +1,58 @@
 lexer grammar CoolLexer;
 
-// Missing support for null values, invalid multiline comments (comment without closing bracket)
+tokens {
+	ERROR
+}
+
+@lexer::members {
+	public void createError(String text) { 
+		setText(text);
+		setType(ERROR);
+	}
+
+  public void checkString(String t) {
+		StringBuilder buf = new StringBuilder(0);
+		String text = t;
+
+		for(int i = 0; i < text.length(); i++) {
+			if (text.charAt(i) == '\\' && text.charAt(i+1) == '\000') {
+				createError("String contains escaped null character.");
+				return;
+			} else if (text.charAt(i) == '\n') {
+				createError("Unterminated string constant");
+				return;
+			} else if(text.charAt(i) == '\\') {
+				if(text.charAt(i+1) == 'n')
+					buf.append('\n');
+				else if(text.charAt(i+1) == 'f')
+					buf.append('\f');
+				else if(text.charAt(i+1) == 't')
+					buf.append('\t');
+				else if(text.charAt(i+1) == 'b')
+					buf.append('\t');
+				else if(text.charAt(i+1) == '\"')
+					buf.append('\"');
+				else if(text.charAt(i+1) == '\\')
+					buf.append('\\');
+				else
+					buf.append(text.charAt(i+1));
+				i++;
+			} else {
+				buf.append(text.charAt(i));
+			}
+		}
+
+		// TOOD: check string table for length
+
+		// get rid of quotes maybe do with pop/push mode thing
+		setText(
+			newText.substring(
+				1, newText.length()-1
+			)
+		);
+		return;
+	}
+}
 
 /* Comments */
 SINGLE_LINE_COMMENT: '--' ~[\r\n]* '\r'? '\n' -> skip;
@@ -67,22 +119,24 @@ NOT: [Nn] [Oo] [Tt];
 
 TRUE: 't' [Rr] [Uu] [Ee];
 FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
+
 /* VALUES */
+
+INT_CONST: '-'? DIGIT;
+ID: [a-z] (LETTER_ | DIGIT)*;
+TYPEID: [A-Z] (LETTER_ | DIGIT)*;
+WS: (' ' | '\t' | '\n' | '\r' | '\u000B')+ -> skip;
+
+EOF_STRING: ('"' ( '\\' | WS | ~('\\' | '"'))*) (EOF) {
+	createError("EOF in string constant");
+};
 
 STRING_CONST:
 	'"' (
 		('\\' | '\t' | '\r\n' | '\r' | '\n' | '\\"')
 		| ~('\\' | '\t' | '\r' | '\n' | '"')
-	)* '"';
-
-UNTERMINATED_STRING: '"' '\n' { setText("Unterminated string constant"); } -> type(ERROR);
-
-INT_CONST: '-'? DIGIT;
-// BOOL_CONST: (TRUE | FALSE);
-
-ID: [a-z] (LETTER_ | DIGIT)*;
-TYPEID: [A-Z] (LETTER_ | DIGIT)*;
-
-WS: (' ' | '\t' | '\n' | '\r' | '\u000B')+ -> skip;
+	)* '"' { 
+		checkString(getText()); 
+	};
 
 ERROR: .;

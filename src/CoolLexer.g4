@@ -75,6 +75,8 @@ STRING_CONST:
 		| ~('\\' | '\t' | '\r' | '\n' | '"')
 	)* '"';
 
+UNTERMINATED_STRING: '"' '\n' { setText("Unterminated string constant"); } -> type(ERROR);
+
 INT_CONST: '-'? DIGIT;
 // BOOL_CONST: (TRUE | FALSE);
 

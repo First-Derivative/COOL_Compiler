@@ -51,3 +51,5 @@ expr:
 	| STRING_CONST
 	| TRUE
 	| FALSE;
+
+error: ERROR { Utilities.lexError(); };

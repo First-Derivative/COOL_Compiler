@@ -10,54 +10,50 @@ tokens {
 		setType(ERROR);
 	}
 
-  public void checkString(String t) {
+  public void checkString(String text) {
+		// String newText = t;
 		StringBuilder buf = new StringBuilder(0);
-		String newText = t;
 
-		for(int i = 0; i < newText.length(); i++) {
+		for(int i = 0; i < text.length(); i++) {
 			// IDK IF WE NEED THIS FIRST CHECK
 
-			if (newText.charAt(i) == '\\' && newText.charAt(i+1) == '\000') {
+			if (text.charAt(i) == '\\' && text.charAt(i+1) == '\000') {
 				createError("String contains escaped null character.");
 				return;
-			} else if (newText.charAt(i) == '\000') {
+			} else if (text.charAt(i) == '\000') {
 				createError("String contains null character.");
 				return;
-			} else if (newText.charAt(i) == '\n') {
+			} else if (text.charAt(i) == '\n') {
 				createError("Unterminated string constant");
 				return;
-			} else if(newText.charAt(i) == '\\') {
-				if(newText.charAt(i+1) == 'n')
+			} else if(text.charAt(i) == '\\') {
+				if(text.charAt(i+1) == 'n')
 					buf.append('\n');
-				else if(newText.charAt(i+1) == 'f')
+				else if(text.charAt(i+1) == 'f')
 					buf.append('\f');
-				else if(newText.charAt(i+1) == 't')
+				else if(text.charAt(i+1) == 't')
 					buf.append('\t');
-				else if(newText.charAt(i+1) == 'b')
+				else if(text.charAt(i+1) == 'b')
 					buf.append('\t');
-				else if(newText.charAt(i+1) == '\"')
+				else if(text.charAt(i+1) == '\"')
 					buf.append('\"');
-				else if(newText.charAt(i+1) == '\\')
+				else if(text.charAt(i+1) == '\\')
 					buf.append('\\');
 				else
-					buf.append(newText.charAt(i+1));
+					buf.append(text.charAt(i+1));
 				i++;
 			} else {
-				buf.append(newText.charAt(i));
+				buf.append(text.charAt(i));
 			}
 		}
 
-		// TOOD: check string table for length
-		if(newText.length() > 1024) {
+		String bufString = buf.toString();
+		if(bufString.length() - 2 > 1024) {
 			createError("String constant too long");
+			return;
 		}
 
-		// get rid of quotes maybe do with pop/push mode thing
-		setText(
-			newText.substring(
-				1, newText.length()-1
-			)
-		);
+		setText(bufString);
 		return;
 	}
 }
@@ -73,7 +69,7 @@ BEGIN_COMMENT: '(*' -> skip, pushMode(COMMENT_MODE);
 mode COMMENT_MODE;
 END_COMMENT: '*)' -> skip, popMode;
 BEGIN_INNER_COMMENT: '(*' -> skip, pushMode(INNER_COMMENT);
-EOF_COMMENT: EOF { createError("EOF in comment"); };
+EOF_COMMENT: . (EOF) { createError("EOF in comment"); };
 COMMENT_CONTENT: . -> skip;
 
 mode INNER_COMMENT;

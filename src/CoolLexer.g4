@@ -12,37 +12,45 @@ tokens {
 
   public void checkString(String t) {
 		StringBuilder buf = new StringBuilder(0);
-		String text = t;
+		String newText = t;
 
-		for(int i = 0; i < text.length(); i++) {
-			if (text.charAt(i) == '\\' && text.charAt(i+1) == '\000') {
+		for(int i = 0; i < newText.length(); i++) {
+			// IDK IF WE NEED THIS FIRST CHECK
+
+			if (newText.charAt(i) == '\\' && newText.charAt(i+1) == '\000') {
 				createError("String contains escaped null character.");
 				return;
-			} else if (text.charAt(i) == '\n') {
+			} else if (newText.charAt(i) == '\000') {
+				createError("String contains null character.");
+				return;
+			} else if (newText.charAt(i) == '\n') {
 				createError("Unterminated string constant");
 				return;
-			} else if(text.charAt(i) == '\\') {
-				if(text.charAt(i+1) == 'n')
+			} else if(newText.charAt(i) == '\\') {
+				if(newText.charAt(i+1) == 'n')
 					buf.append('\n');
-				else if(text.charAt(i+1) == 'f')
+				else if(newText.charAt(i+1) == 'f')
 					buf.append('\f');
-				else if(text.charAt(i+1) == 't')
+				else if(newText.charAt(i+1) == 't')
 					buf.append('\t');
-				else if(text.charAt(i+1) == 'b')
+				else if(newText.charAt(i+1) == 'b')
 					buf.append('\t');
-				else if(text.charAt(i+1) == '\"')
+				else if(newText.charAt(i+1) == '\"')
 					buf.append('\"');
-				else if(text.charAt(i+1) == '\\')
+				else if(newText.charAt(i+1) == '\\')
 					buf.append('\\');
 				else
-					buf.append(text.charAt(i+1));
+					buf.append(newText.charAt(i+1));
 				i++;
 			} else {
-				buf.append(text.charAt(i));
+				buf.append(newText.charAt(i));
 			}
 		}
 
 		// TOOD: check string table for length
+		if(newText.length() > 1024) {
+			createError("String constant too long");
+		}
 
 		// get rid of quotes maybe do with pop/push mode thing
 		setText(
@@ -55,9 +63,26 @@ tokens {
 }
 
 /* Comments */
-SINGLE_LINE_COMMENT: '--' ~[\r\n]* '\r'? '\n' -> skip;
-MULTI_LINE_COMMENT:
-	'(*' (MULTI_LINE_COMMENT | .)*? '*)' -> skip;
+SINGLE_LINE_COMMENT: '--' (.)*? ('\n' | '\r' | EOF) -> skip;
+// MULTI_LINE_COMMENT: '(*' (MULTI_LINE_COMMENT | .)*? '*)' -> skip; UNMATCHED_COMMENT: '*)' {
+// createError("Unmatched *)"); }; EOF_COMMENT: '(*' .(EOF) { createError("EOF in comment"); };
+
+UNMATCHED_COMMENT: '*)' { createError("Unmatched *)"); };
+
+BEGIN_COMMENT: '(*' -> skip, pushMode(COMMENT_MODE);
+mode COMMENT_MODE;
+END_COMMENT: '*)' -> skip, popMode;
+BEGIN_INNER_COMMENT: '(*' -> skip, pushMode(INNER_COMMENT);
+EOF_COMMENT: EOF { createError("EOF in comment"); };
+COMMENT_CONTENT: . -> skip;
+
+mode INNER_COMMENT;
+NEW_INNER_COMMENT: '(*' -> pushMode(INNER_COMMENT), skip;
+INNER_COMMENT_EOF: '*)' EOF { createError("EOF in comment"); };
+CLOSE_INNER_COMMENT: '*)' -> popMode, skip;
+INNER_COMMENT_CONTENT: . -> skip;
+
+mode DEFAULT_MODE;
 
 /* Punctution */
 PERIOD: '.';
@@ -89,14 +114,6 @@ RIGHTARROW: '=>';
 fragment DIGIT: [0-9]+;
 fragment LETTER: [a-zA-Z];
 fragment LETTER_: LETTER | '_';
-fragment ESCAPE_CHARACTERS:
-	'\\'
-	| '\n'
-	| '\t'
-	| '\f'
-	| '\r'
-	| '\b'
-	| '"';
 
 /* Keywords */
 CLASS: [Cc] [Ll] [Aa] [Ss] [Ss];
@@ -123,20 +140,27 @@ FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
 /* VALUES */
 
 INT_CONST: '-'? DIGIT;
-ID: [a-z] (LETTER_ | DIGIT)*;
+OBJECTID: [a-z] (LETTER_ | DIGIT)*;
 TYPEID: [A-Z] (LETTER_ | DIGIT)*;
-WS: (' ' | '\t' | '\n' | '\r' | '\u000B')+ -> skip;
-
-EOF_STRING: ('"' ( '\\' | WS | ~('\\' | '"'))*) (EOF) {
-	createError("EOF in string constant");
-};
+WS: (' ' | '\t' | '\n' | '\r' | '\f' | '\u000B')+ -> skip;
 
 STRING_CONST:
 	'"' (
 		('\\' | '\t' | '\r\n' | '\r' | '\n' | '\\"')
 		| ~('\\' | '\t' | '\r' | '\n' | '"')
-	)* '"' { 
-		checkString(getText()); 
-	};
+	)* '"' { checkString(getText()); };
+
+EOF_STRING: ('"' ( '\\' | '\\"' | WS | ~('\\' | '"'))*) (EOF) {
+	String text = getText();
+
+	for (int i=0; i<text.length(); i++) {
+		if (text.charAt(i) == '\000') {
+			createError("String contains null character.");
+			return; 
+		}
+	}
+	
+	createError("EOF in string constant"); 
+};
 
 ERROR: .;

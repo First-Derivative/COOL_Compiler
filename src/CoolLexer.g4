@@ -11,12 +11,10 @@ tokens {
 	}
 
   public void checkString(String text) {
-		// String newText = t;
 		StringBuilder buf = new StringBuilder(0);
 
 		for(int i = 0; i < text.length(); i++) {
 			// IDK IF WE NEED THIS FIRST CHECK
-
 			if (text.charAt(i) == '\\' && text.charAt(i+1) == '\000') {
 				createError("String contains escaped null character.");
 				return;
@@ -27,20 +25,21 @@ tokens {
 				createError("Unterminated string constant");
 				return;
 			} else if(text.charAt(i) == '\\') {
-				if(text.charAt(i+1) == 'n')
+				if(text.charAt(i+1) == 'n') {
 					buf.append('\n');
-				else if(text.charAt(i+1) == 'f')
+				} else if(text.charAt(i+1) == 'f') {
 					buf.append('\f');
-				else if(text.charAt(i+1) == 't')
+				} else if(text.charAt(i+1) == 't') {
 					buf.append('\t');
-				else if(text.charAt(i+1) == 'b')
+				} else if(text.charAt(i+1) == 'b') {
 					buf.append('\t');
-				else if(text.charAt(i+1) == '\"')
+				} else if(text.charAt(i+1) == '\"') {
 					buf.append('\"');
-				else if(text.charAt(i+1) == '\\')
+				} else if(text.charAt(i+1) == '\\') {
 					buf.append('\\');
-				else
+				} else {
 					buf.append(text.charAt(i+1));
+				}
 				i++;
 			} else {
 				buf.append(text.charAt(i));
@@ -140,18 +139,24 @@ OBJECTID: [a-z] (LETTER_ | DIGIT)*;
 TYPEID: [A-Z] (LETTER_ | DIGIT)*;
 WS: (' ' | '\t' | '\n' | '\r' | '\f' | '\u000B')+ -> skip;
 
-STRING_CONST:
-	'"' (
-		('\\' | '\t' | '\r\n' | '\r' | '\n' | '\\"')
-		| ~('\\' | '\t' | '\r' | '\n' | '"')
-	)* '"' { checkString(getText()); };
+// STRING_CONST: '"' ( ('\\' | '\t' | '\r\n' | '\r' | '\n' | '\\"') | ~('\\' | '\t' | '\r' | '\n' |
+// '"') )* '"' { checkString(getText()); };
 
-EOF_STRING: ('"' ( '\\' | '\\"' | WS | ~('\\' | '"'))*) (EOF) {
+STRING_CONST: '"' ('\\"' | .)*? '"' { checkString(getText()); };
+
+INCOMPLETE_STRING: ('"' ( '\\' | '\\"' | WS | ~('\\' | '"'))*) (
+		EOF
+	) {
 	String text = getText();
 
 	for (int i=0; i<text.length(); i++) {
 		if (text.charAt(i) == '\000') {
 			createError("String contains null character.");
+			return; 
+		}
+		
+		if (text.charAt(i) == '\n' && (i != text.length() - 1)) {
+			createError("Unterminated string constant");
 			return; 
 		}
 	}

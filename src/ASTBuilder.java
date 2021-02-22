@@ -139,4 +139,37 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     return visitNewNode(ctx);
   }
 
+  public Tree visitObjectNode(CoolParser.ExprContext ctx) {
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getText());
+    return new ObjectNode(ctx.OBJECTID(0).getSymbol().getLine(), name);
+  }
+
+  public Tree visitIntConstNode(CoolParser.ExprContext ctx) {
+    Symbol value = StringTable.inttable.addString(ctx.INT_CONST().getSymbol().getText());
+    return new IntConstNode(ctx.INT_CONST().getSymbol().getLine(), value);
+  }
+
+  public Tree visitStringConstNode(CoolParser.ExprContext ctx) {
+    Symbol value = StringTable.stringtable.addString(ctx.STRING_CONST().getSymbol().getText());
+    return new StringConstNode(ctx.STRING_CONST().getSymbol().getLine(), value);
+  }
+
+  public Tree visitBoolConstNode(CoolParser.ExprContext ctx) {
+    Boolean value;
+    int linenumber;
+    if (ctx.TRUE() != null) {
+      value = true;
+      linenumber = ctx.TRUE().getSymbol().getLine();
+    } else {
+      value = false;
+      linenumber = ctx.FALSE().getSymbol().getLine();
+    }
+
+    return new BoolConstNode(linenumber, value);
+  }
+
+  public Tree visitNewNode(CoolParser.ExprContext ctx) {
+    Symbol name = StringTable.idtable.addString(ctx.TYPEID(0).getText());
+    return new NewNode(ctx.NEW().getSymbol().getLine(), name);
+  }
 }

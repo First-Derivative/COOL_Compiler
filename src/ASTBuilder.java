@@ -38,6 +38,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     return visitMethodNode(ctx); // isMethod
   }
 
+  // visitFeature auxiliary Methods
   public Tree visitMethodNode(CoolParser.FeatureContext ctx) {
 
     List<FormalNode> formalNodes = new ArrayList<>();
@@ -54,6 +55,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     return methodNode;
   }
 
+  // visitFeature auxiliary Methods
   public Tree visitAttributeNode(CoolParser.FeatureContext ctx) {
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
@@ -64,6 +66,15 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     AttributeNode attrNode = new AttributeNode(ctx.OBJECTID().getSymbol().getLine(), name, type, expr);
 
     return attrNode;
+  }
+
+  public Tree visitFormal(CoolParser.FormalContext ctx) {
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
+    Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
+
+    FormalNode formalNode = new FormalNode(ctx.OBJECTID().getSymbol().getLine(), name, type);
+
+    return formalNode;
   }
 
 }

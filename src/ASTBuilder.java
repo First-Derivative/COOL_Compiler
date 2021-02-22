@@ -31,6 +31,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   @Override
+  // Splits into MethodNode, AttributeNode
   public Tree visitFeature(CoolParser.FeatureContext ctx) {
     if (ctx.PARENT_OPEN() == null) { // isAttribute
       return visitAttributeNode(ctx);
@@ -38,24 +39,25 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     return visitMethodNode(ctx); // isMethod
   }
 
-  // visitFeature auxiliary Methods
   public Tree visitMethodNode(CoolParser.FeatureContext ctx) {
 
     List<FormalNode> formalNodes = new ArrayList<>();
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     Symbol returnType = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
 
-    MethodNode methodNode = new MethodNode(ctx.OBJECTID().getSymbol().getLine(), name, formalNodes, returnType,
-        (ExpressionNode) visit(ctx.expr()));
+    // maybe adding formals before methodNode instantiates means formal visits have
+    // precedence over expr vists
 
     for (CoolParser.FormalContext c : ctx.formal()) {
       formalNodes.add((FormalNode) visit(c));
     }
 
+    MethodNode methodNode = new MethodNode(ctx.OBJECTID().getSymbol().getLine(), name, formalNodes, returnType,
+        (ExpressionNode) visit(ctx.expr()));
+
     return methodNode;
   }
 
-  // visitFeature auxiliary Methods
   public Tree visitAttributeNode(CoolParser.FeatureContext ctx) {
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
@@ -68,6 +70,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     return attrNode;
   }
 
+  @Override
   public Tree visitFormal(CoolParser.FormalContext ctx) {
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
@@ -75,6 +78,65 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     FormalNode formalNode = new FormalNode(ctx.OBJECTID().getSymbol().getLine(), name, type);
 
     return formalNode;
+  }
+
+  @Override
+  public Tree visitExpr(CoolParser.ExprContext ctx) {
+
+    // Deals with CondNode
+    if (ctx.IF() != null) {
+
+    }
+
+    // Deals with LetNode
+    if (ctx.LET() != null) {
+
+    }
+
+    // Deals with CaseNode
+    if (ctx.CASE() != null) {
+
+    }
+
+    // Dealing with AssignNode, StaticDispatchNode, DispatchNode, ObjectNode
+    if (ctx.OBJECTID().size() == 1) {
+
+    }
+
+    // Dealing with terminal expressions
+    if (ctx.expr().size() == 0) {
+
+      // ObjectNode
+      if (ctx.OBJECTID() != null) {
+        return visitObjectNode(ctx);
+      }
+      // IntConstNode
+      else if (ctx.INT_CONST() != null) {
+        // return visitIntConstNode(ctx);
+      }
+      // StringConstNode
+      else if (ctx.STRING_CONST() != null) {
+        // return visitStringConstNode(ctx);
+      }
+      // BoolConstNode
+      else if (ctx.TRUE() != null || ctx.FALSE() != null) {
+        // return visitBoolConstNode(ctx);
+      }
+    }
+
+    // Dealing with BlockNode, IsVoidNode, NegNode, CompNode, ( expr ),
+    if (ctx.expr().size() == 1) {
+
+    }
+
+    // Dealing with LoopNode, PlusNode, Subnode, MulNode, DivideNode, LTNode,
+    // LEqNode, EqNode,
+    if (ctx.expr().size() == 2) {
+
+    }
+
+    // default case to satisfy fucking java
+    return visitNewNode(ctx);
   }
 
 }

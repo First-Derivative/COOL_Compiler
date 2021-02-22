@@ -7,9 +7,11 @@ options {
 	tokenVocab = CoolLexer;
 }
 
+// ProgramNode
 program: (coolClass SEMICOLON)+ EOF;
 
 coolClass:
+	// ClassNode
 	CLASS TYPEID (INHERITS TYPEID)? CURLY_OPEN (
 		feature SEMICOLON
 	)* CURLY_CLOSE;
@@ -24,36 +26,61 @@ feature:
 formal: OBJECTID COLON TYPEID;
 
 expr:
+	// AssignNode
 	OBJECTID ASSIGN_OPERATOR expr
+	// StaticDispatchNode
 	| expr (AT TYPEID)? PERIOD OBJECTID PARENT_OPEN (
 		expr (COMMA expr)*
 	)? PARENT_CLOSE
+	// DispatchNode
 	| OBJECTID PARENT_OPEN (expr (COMMA expr)*)? PARENT_CLOSE
+	// CondNode
 	| IF expr THEN expr ELSE expr FI
+	// LoopNode
 	| WHILE expr LOOP expr POOL
+	// BlockNode
 	| CURLY_OPEN (expr SEMICOLON)+ CURLY_CLOSE
+	// LetNode
 	| LET OBJECTID COLON TYPEID (ASSIGN_OPERATOR expr)? (
 		COMMA OBJECTID COLON TYPEID (ASSIGN_OPERATOR expr)?
 	)* IN expr
+	// CaseNode
 	| CASE expr OF (
 		OBJECTID COLON TYPEID RIGHTARROW expr SEMICOLON
 	)+ ESAC
+	// NewNode
 	| NEW TYPEID
+	// IsVoidNode
 	| ISVOID expr
+	// PlusNode
 	| expr PLUS_OPERATOR expr
+	// SubNode
 	| expr MINUS_OPERATOR expr
+	// MulNode
 	| expr MULT_OPERATOR expr
+	// DivideNode
 	| expr DIV_OPERATOR expr
+	// NegNode
 	| INT_COMPLEMENT_OPERATOR expr
+	// LTNode
 	| expr LESS_OPERATOR expr
+	// LEqNode
 	| expr LESS_EQ_OPERATOR expr
+	// EqNode
 	| expr EQ_OPERATOR expr
+	// CompNode
 	| NOT expr
+	// ExpressionNode
 	| PARENT_OPEN expr PARENT_CLOSE
+	// ObjectNode
 	| OBJECTID
+	// IntConstNode
 	| INT_CONST
+	// StringConstNode
 	| STRING_CONST
+	// BoolConstNode
 	| TRUE
+	// BoolConstNode
 	| FALSE;
 
 error: ERROR { Utilities.lexError(); };

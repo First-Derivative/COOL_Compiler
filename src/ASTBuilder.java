@@ -94,9 +94,21 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
 
     }
 
-    // Dealing with AssignNode, StaticDispatchNode, DispatchNode, ObjectNode
+    // Dealing with AssignNode, StaticDispatchNode, DispatchNode
     if (ctx.OBJECTID().size() == 1) {
 
+      // AssignNode
+      if (ctx.ASSIGN_OPERATOR() != null) {
+        return visitAssignNode(ctx);
+      }
+      // StaticDispatchNode
+      else if (ctx.AT() != null) {
+        return visitStaticDispatchNode(ctx);
+      }
+      // DispatchNode
+      else if (ctx.PARENT_OPEN() != null) {
+        return visitDispatchNode(ctx);
+      }
     }
 
     // Dealing with terminal expressions
@@ -108,15 +120,15 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       }
       // IntConstNode
       else if (ctx.INT_CONST() != null) {
-        // return visitIntConstNode(ctx);
+        return visitIntConstNode(ctx);
       }
       // StringConstNode
       else if (ctx.STRING_CONST() != null) {
-        // return visitStringConstNode(ctx);
+        return visitStringConstNode(ctx);
       }
       // BoolConstNode
       else if (ctx.TRUE() != null || ctx.FALSE() != null) {
-        // return visitBoolConstNode(ctx);
+        return visitBoolConstNode(ctx);
       }
     }
 
@@ -215,6 +227,46 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.NOT().getSymbol().getLine();
     ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
     return new CompNode(lineNumber, exprNode);
+  }
+
+  public Tree visitAssignNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.ASSIGN_OPERATOR(0).getSymbol().getLine();
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
+    ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
+
+    return new AssignNode(lineNumber, name, exprNode);
+  }
+
+  public Tree visitStaticDispatchNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.ASSIGN_OPERATOR(0).getSymbol().getLine();
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
+    Symbol type = StringTable.idtable.addString(ctx.TYPEID(0).getSymbol().getText());
+
+    ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
+    List<ExpressionNode> actuals = new ArrayList<>();
+
+    for (int i = 1; i < ctx.expr().size(); i++) {
+      // i starts from 1 instead of 0 because the first expression, expr(0), is
+      // reserved for exprNode (maybe)?
+      actuals.add((ExpressionNode) visit(ctx.expr(i)));
+    }
+
+    return new StaticDispatchNode(lineNumber, exprNode, type, name, actuals);
+  }
+
+  public Tree visitDispatchNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.ASSIGN_OPERATOR(0).getSymbol().getLine();
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
+
+    ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
+    List<ExpressionNode> actuals = new ArrayList<>();
+
+    for (int i = 1; i < ctx.expr().size(); i++) {
+      // i starts from- 1 same reasoning as above ?
+      actuals.add((ExpressionNode) visit(ctx.expr(i)));
+    }
+
+    return new DispatchNode(lineNumber, exprNode, name, actuals);
   }
 
 }

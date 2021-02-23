@@ -157,10 +157,41 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       }
     }
 
-    // Dealing with LoopNode, PlusNode, Subnode, MulNode, DivideNode, LTNode,
+    // Dealing with LoopNode, PlusNode, SubNode, MulNode, DivideNode, LTNode,
     // LEqNode, EqNode,
     if (ctx.expr().size() == 2) {
-
+      // LoopNode
+      if (ctx.WHILE() != null) {
+        return visitLoopNode(ctx);
+      }
+      // PlusNode
+      else if (ctx.PLUS_OPERATOR() != null) {
+        return visitPlusNode(ctx);
+      }
+      // SubNode
+      else if (ctx.MINUS_OPERATOR() != null) {
+        return visitSubNode(ctx);
+      }
+      // MulNode
+      else if (ctx.MULT_OPERATOR() != null) {
+        return visitMulNode(ctx);
+      }
+      // DivideNode
+      else if (ctx.DIV_OPERATOR() != null) {
+        return visitDivideNode(ctx);
+      }
+      // LTNode
+      else if (ctx.LESS_OPERATOR() != null) {
+        return visitLTNode(ctx);
+      }
+      // LEqNode
+      else if (ctx.LESS_EQ_OPERATOR() != null) {
+        return visitLEqNode(ctx);
+      }
+      // EqNode
+      else if (ctx.EQ_OPERATOR() != null) {
+        return visitEqNode(ctx);
+      }
     }
 
     // default case to satisfy fucking java
@@ -265,8 +296,63 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       // i starts from- 1 same reasoning as above ?
       actuals.add((ExpressionNode) visit(ctx.expr(i)));
     }
-
     return new DispatchNode(lineNumber, exprNode, name, actuals);
+  }
+
+  public Tree visitLoopNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.WHILE().getSymbol().getLine();
+    ExpressionNode cond = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode body = (ExpressionNode) visit(ctx.expr(1));
+    return new LoopNode(lineNumber, cond, body);
+  }
+
+  public Tree visitPlusNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.PLUS_OPERATOR().getSymbol().getLine();
+    ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    return new PlusNode(lineNumber, left, right);
+  }
+
+  public Tree visitSubNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.MINUS_OPERATOR().getSymbol().getLine();
+    ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    return new SubNode(lineNumber, left, right);
+  }
+
+  public Tree visitMulNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.MULT_OPERATOR().getSymbol().getLine();
+    ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    return new MulNode(lineNumber, left, right);
+  }
+
+  public Tree visitDivideNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.DIV_OPERATOR().getSymbol().getLine();
+    ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    return new DivideNode(lineNumber, left, right);
+  }
+
+  public Tree visitLTNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.LESS_OPERATOR().getSymbol().getLine();
+    ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    return new LTNode(lineNumber, left, right);
+  }
+
+  public Tree visitLEqNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.LESS_EQ_OPERATOR().getSymbol().getLine();
+    ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    return new LEqNode(lineNumber, left, right);
+  }
+
+  public Tree visitEqNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.EQ_OPERATOR().getSymbol().getLine();
+    ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    return new LEqNode(lineNumber, left, right);
   }
 
 }

@@ -3,6 +3,11 @@ import ast.ProgramNode;
 import ast.*;
 import java.util.*;
 
+// TO DO:
+// Verify ASTBuilder *: Let, Case, Branch
+// Consider Error Handling
+// Ben. 
+
 public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
 
   @Override
@@ -81,17 +86,17 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
 
     // Deals with CondNode
     if (ctx.IF() != null) {
-
+      return visitCondNode(ctx);
     }
 
     // Deals with LetNode
     if (ctx.LET() != null) {
-
+      // return visitLetNode(ctx);
     }
 
     // Deals with CaseNode
     if (ctx.CASE() != null) {
-
+      return visitCaseNode(ctx);
     }
 
     // Dealing with AssignNode, StaticDispatchNode, DispatchNode
@@ -355,4 +360,35 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     return new LEqNode(lineNumber, left, right);
   }
 
+  public Tree visitCondNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.IF().getSymbol().getLine();
+    ExpressionNode cond = (ExpressionNode) visit(ctx.expr(0));
+    ExpressionNode thenExpr = (ExpressionNode) visit(ctx.expr(1));
+    ExpressionNode elseExpr = (ExpressionNode) visit(ctx.expr(1));
+    return new CondNode(lineNumber, cond, thenExpr, elseExpr);
+  }
+
+  public Tree visitLetNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.LET().getSymbol().getLine();
+    Symbol id = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
+    Symbol type = StringTable.idtable.addString(ctx.TYPEID(0).getSymbol().getText());
+
+    int lastExpression = ctx.expr().size() - 1;
+    ExpressionNode init = (ExpressionNode) visit(ctx.expr(1));
+    ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
+
+    return new LetNode(lineNumber, id, type, init, body);
+  }
+
+  public Tree visitCaseNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.CASE().getSymbol().getLine();
+    ExpressionNode expr = (ExpressionNode) visit(ctx.expr(0));
+    List<BranchNode> cases = new ArrayList<>();
+
+    for (int i = 0; i < ctx.expr().size(); i++) {
+      cases.add((BranchNode) visit(ctx.expr(i)));
+    }
+
+    return new CaseNode(lineNumber, expr, cases);
+  }
 }

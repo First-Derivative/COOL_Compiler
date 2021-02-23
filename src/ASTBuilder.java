@@ -376,21 +376,28 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   public Tree visitLetNode(CoolParser.ExprContext ctx) {
-    int lineNumber = ctx.LET().getSymbol().getLine();
+    int lineNumber = ctx.OBJECTID(0).getSymbol().getLine();
     Symbol id = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
     Symbol type = StringTable.idtable.addString(ctx.TYPEID(0).getSymbol().getText());
-    int lastExpression = ctx.expr().size() - 1;
 
-    ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
-        : (ExpressionNode) visit(ctx.expr(0));
+    int expressionListSize = ctx.expr().size();
+    int lastExpression =  expressionListSize - 1;
+    
+    // ctx.expr()  =  [a <- "something", b <- "else", c <- "last", { body }]
 
-    ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
+    if (ctx.expr().size() > 2) { 
+      ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
+        : (ExpressionNode) visit(ctx.expr(0)); 
 
-    for (int i = 1; i < lastExpression - 1; i++) {
-      visitLetNode(ctx.expr(i));
+      ExpressionNode body = (ExpressionNode) visit(ctx.expr());
+      return new LetNode(lineNumber, id, type, init, body);
+    } else {
+      ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
+        : (ExpressionNode) visit(ctx.expr(0)); 
+
+      ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
+      return new LetNode(lineNumber, id, type, init, body);
     }
-
-    return new LetNode(lineNumber, id, type, init, body);
   }
 
   public Tree visitCaseNode(CoolParser.ExprContext ctx) {

@@ -65,9 +65,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     ExpressionNode expr = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
         : (ExpressionNode) visit(ctx.expr());
 
-    AttributeNode attrNode = new AttributeNode(ctx.OBJECTID().getSymbol().getLine(), name, type, expr);
-
-    return attrNode;
+    return new AttributeNode(ctx.OBJECTID().getSymbol().getLine(), name, type, expr);
   }
 
   @Override
@@ -75,9 +73,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
 
-    FormalNode formalNode = new FormalNode(ctx.OBJECTID().getSymbol().getLine(), name, type);
-
-    return formalNode;
+    return new FormalNode(ctx.OBJECTID().getSymbol().getLine(), name, type);
   }
 
   @Override
@@ -127,6 +123,26 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     // Dealing with BlockNode, IsVoidNode, NegNode, CompNode, ( expr ),
     if (ctx.expr().size() == 1) {
 
+      // BlockNode
+      if (ctx.CURLY_OPEN() != null) {
+        return visitBlockNode(ctx);
+      }
+      // IsVoidNode
+      else if (ctx.ISVOID() != null) {
+        return visitISVoidNode(ctx);
+      }
+      // NegNode
+      else if (ctx.INT_COMPLEMENT_OPERATOR() != null) {
+        return visitNegNode(ctx);
+      }
+      // CompNode
+      else if (ctx.NOT() != null) {
+        return visitCompNode(ctx);
+      }
+      // ExpressionNode
+      else if (ctx.PARENT_OPEN() != null) {
+        return visitExpr(ctx);
+      }
     }
 
     // Dealing with LoopNode, PlusNode, Subnode, MulNode, DivideNode, LTNode,
@@ -156,20 +172,49 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
 
   public Tree visitBoolConstNode(CoolParser.ExprContext ctx) {
     Boolean value;
-    int linenumber;
+    int lineNumber;
     if (ctx.TRUE() != null) {
       value = true;
-      linenumber = ctx.TRUE().getSymbol().getLine();
+      lineNumber = ctx.TRUE().getSymbol().getLine();
     } else {
       value = false;
-      linenumber = ctx.FALSE().getSymbol().getLine();
+      lineNumber = ctx.FALSE().getSymbol().getLine();
     }
 
-    return new BoolConstNode(linenumber, value);
+    return new BoolConstNode(lineNumber, value);
   }
 
   public Tree visitNewNode(CoolParser.ExprContext ctx) {
     Symbol name = StringTable.idtable.addString(ctx.TYPEID(0).getText());
     return new NewNode(ctx.NEW().getSymbol().getLine(), name);
   }
+
+  public Tree visitBlockNode(CoolParser.ExprContext ctx) {
+    List<ExpressionNode> exprNodeList = new ArrayList<>();
+
+    for (int i = 0; i < ctx.expr().size(); i++) {
+      exprNodeList.add((ExpressionNode) visit(ctx.expr(i)));
+    }
+
+    return new BlockNode(ctx.CURLY_OPEN().getSymbol().getLine(), exprNodeList);
+  }
+
+  public Tree visitISVoidNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.ISVOID().getSymbol().getLine();
+    ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
+    return new IsVoidNode(lineNumber, exprNode);
+  }
+
+  public Tree visitNegNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.INT_COMPLEMENT_OPERATOR().getSymbol().getLine();
+    ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
+    return new NegNode(lineNumber, exprNode);
+  }
+
+  public Tree visitCompNode(CoolParser.ExprContext ctx) {
+    int lineNumber = ctx.NOT().getSymbol().getLine();
+    ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
+    return new CompNode(lineNumber, exprNode);
+  }
+
 }

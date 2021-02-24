@@ -317,7 +317,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
 
   }
 
-  // handles only DispatchNode
+  // handles only DispatchNode syntax
   public Tree visitDispatchNode(CoolParser.ExprContext ctx) {
 
     int lineNumber = ctx.OBJECTID(0).getSymbol().getLine();
@@ -405,27 +405,29 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     Symbol type = StringTable.idtable.addString(ctx.TYPEID(0).getSymbol().getText());
 
     int expressionListSize = ctx.expr().size();
-    int lastExpression =  expressionListSize - 1;
+    int lastExpression = expressionListSize - 1;
     ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
-        : (ExpressionNode) visit(ctx.expr(0)); 
+        : (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
 
     return new LetNode(lineNumber, id, type, init, body);
-    
-    // ctx.expr()  =  [a <- "something", b <- "else", c <- "last", { body }]
 
-    // if (ctx.expr().size() > 2) { 
-    //   ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
-    //     : (ExpressionNode) visit(ctx.expr(0)); 
+    // ctx.expr() = [a <- "something", b <- "else", c <- "last", { body }]
 
-    //   ExpressionNode body = (ExpressionNode) visit(ctx.expr());
-    //   return new LetNode(lineNumber, id, type, init, body);
+    // if (ctx.expr().size() > 2) {
+    // ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new
+    // NoExpressionNode(0)
+    // : (ExpressionNode) visit(ctx.expr(0));
+
+    // ExpressionNode body = (ExpressionNode) visit(ctx.expr());
+    // return new LetNode(lineNumber, id, type, init, body);
     // } else {
-    //   ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
-    //     : (ExpressionNode) visit(ctx.expr(0)); 
+    // ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new
+    // NoExpressionNode(0)
+    // : (ExpressionNode) visit(ctx.expr(0));
 
-    //   ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
-    //   return new LetNode(lineNumber, id, type, init, body);
+    // ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
+    // return new LetNode(lineNumber, id, type, init, body);
     // }
   }
 

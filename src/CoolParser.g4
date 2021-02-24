@@ -29,6 +29,8 @@ formal: OBJECTID COLON TYPEID;
 // BranchNode 
 branch: OBJECTID COLON TYPEID RIGHTARROW expr SEMICOLON;
 
+letvars: OBJECTID COLON TYPEID (ASSIGN_OPERATOR expr)?;
+
 expr:
 	// AssignNode
 	OBJECTID ASSIGN_OPERATOR expr
@@ -54,9 +56,7 @@ expr:
 	| CURLY_OPEN (expr SEMICOLON)+ CURLY_CLOSE
 
 	// LetNode
-	| LET OBJECTID COLON TYPEID (ASSIGN_OPERATOR expr)? (
-		COMMA OBJECTID COLON TYPEID (ASSIGN_OPERATOR expr)?
-	)* IN expr
+	| LET letvars (COMMA letvars)* IN expr
 
 	// CaseNode
 	| CASE expr OF branch+ ESAC

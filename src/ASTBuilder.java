@@ -415,7 +415,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       List<CoolParser.LetvarsContext> letctx = ctx.letvars();
       int lastLet = letctx.size() - 1;
 
-      for (int i = lastLet; i > -1; i++) {
+      for (int i = lastLet; i > -1; i-- {
 
         // checks for assignment on var declaration
         if (letAssigned(letctx.get(i))) {

@@ -141,8 +141,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     }
 
     // Dealing with BlockNode, IsVoidNode, NegNode, CompNode, ( expr ),
-    if (ctx.expr().size() == 1) {
-
+    if (ctx.expr().size() == 1 || ctx.expr() != null) {
       // BlockNode
       if (ctx.CURLY_OPEN() != null) {
         return visitBlockNode(ctx);
@@ -159,10 +158,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       else if (ctx.NOT() != null) {
         return visitCompNode(ctx);
       }
-      // ExpressionNode
-      else if (ctx.PARENT_OPEN() != null) {
-        return visitExpr(ctx);
-      }
+
     }
 
     // Dealing with LoopNode, PlusNode, SubNode, MulNode, DivideNode, LTNode,
@@ -202,7 +198,12 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       }
     }
 
-    // default case to satisfy fucking java
+    // Deals with (expr)
+    if (ctx.OBJECTID() == null && ctx.PARENT_OPEN() != null) {
+      return visitExpr(ctx.expr(0));
+    }
+
+    // default case to satisfy java
     return visitNewNode(ctx);
   }
 
@@ -278,7 +279,6 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   public Tree visitStaticDispatchNode(CoolParser.ExprContext ctx) {
-    System.out.println("static here!!!");
     int lineNumber = ctx.ASSIGN_OPERATOR().getSymbol().getLine();
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
@@ -415,7 +415,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       List<CoolParser.LetvarsContext> letctx = ctx.letvars();
       int lastLet = letctx.size() - 1;
 
-      for (int i = lastLet; i > -1; i-- {
+      for (int i = lastLet; i > -1; i--) {
 
         // checks for assignment on var declaration
         if (letAssigned(letctx.get(i))) {

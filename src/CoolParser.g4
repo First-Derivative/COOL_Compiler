@@ -55,9 +55,6 @@ expr:
 	// BlockNode
 	| CURLY_OPEN (expr SEMICOLON)+ CURLY_CLOSE
 
-	// LetNode
-	| LET letvars (COMMA letvars)* IN expr
-
 	// CaseNode
 	| CASE expr OF branch+ ESAC
 
@@ -110,6 +107,9 @@ expr:
 	| TRUE
 
 	// BoolConstNode
-	| FALSE;
+	| FALSE
+
+	// LetNode
+	| LET letvars (COMMA letvars)* IN expr;
 
 error: ERROR { Utilities.lexError(); };

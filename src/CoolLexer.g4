@@ -52,7 +52,11 @@ tokens {
 			return;
 		}
 
-		setText(bufString);
+		setText(
+			bufString.substring(
+				1, bufString.length()-1
+			)
+		);
 		return;
 	}
 }

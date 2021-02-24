@@ -1,5 +1,3 @@
-import ast.ClassNode;
-import ast.ProgramNode;
 import ast.*;
 import java.util.*;
 
@@ -102,9 +100,9 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     }
 
     // Dealing with AssignNode, StaticDispatchNode, DispatchNode
-    if (ctx.OBJECTID().size() == 1) {
+    if (ctx.OBJECTID() != null) {
       // AssignNode
-      if (ctx.ASSIGN_OPERATOR().size() != 0) {
+      if (ctx.ASSIGN_OPERATOR() != null) {
         return visitAssignNode(ctx);
       }
       // StaticDispatchNode
@@ -125,7 +123,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     if (ctx.expr().size() == 0) {
 
       // ObjectNode
-      if (ctx.OBJECTID().size() != 0) {
+      if (ctx.OBJECTID() != null) {
         return visitObjectNode(ctx);
       }
       // IntConstNode
@@ -143,8 +141,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     }
 
     // Dealing with BlockNode, IsVoidNode, NegNode, CompNode, ( expr ),
-    if (ctx.expr().size() == 1) {
-
+    if (ctx.expr().size() == 1 || ctx.expr() != null) {
       // BlockNode
       if (ctx.CURLY_OPEN() != null) {
         return visitBlockNode(ctx);
@@ -161,10 +158,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       else if (ctx.NOT() != null) {
         return visitCompNode(ctx);
       }
-      // ExpressionNode
-      else if (ctx.PARENT_OPEN() != null) {
-        return visitExpr(ctx);
-      }
+
     }
 
     // Dealing with LoopNode, PlusNode, SubNode, MulNode, DivideNode, LTNode,
@@ -204,13 +198,18 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
       }
     }
 
-    // default case to satisfy fucking java
+    // Deals with (expr)
+    if (ctx.OBJECTID() == null && ctx.PARENT_OPEN() != null) {
+      return visitExpr(ctx.expr(0));
+    }
+
+    // default case to satisfy java
     return visitNewNode(ctx);
   }
 
   public Tree visitObjectNode(CoolParser.ExprContext ctx) {
-    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getText());
-    return new ObjectNode(ctx.OBJECTID(0).getSymbol().getLine(), name);
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
+    return new ObjectNode(ctx.OBJECTID().getSymbol().getLine(), name);
   }
 
   public Tree visitIntConstNode(CoolParser.ExprContext ctx) {
@@ -238,7 +237,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   public Tree visitNewNode(CoolParser.ExprContext ctx) {
-    Symbol name = StringTable.idtable.addString(ctx.TYPEID(0).getText());
+    Symbol name = StringTable.idtable.addString(ctx.TYPEID().getText());
     return new NewNode(ctx.NEW().getSymbol().getLine(), name);
   }
 
@@ -271,8 +270,8 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   public Tree visitAssignNode(CoolParser.ExprContext ctx) {
-    int lineNumber = ctx.OBJECTID(0).getSymbol().getLine();
-    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
+    int lineNumber = ctx.OBJECTID().getSymbol().getLine();
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
 
     ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
 
@@ -280,10 +279,9 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   public Tree visitStaticDispatchNode(CoolParser.ExprContext ctx) {
-    System.out.println("static here!!!");
-    int lineNumber = ctx.ASSIGN_OPERATOR(0).getSymbol().getLine();
-    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
-    Symbol type = StringTable.idtable.addString(ctx.TYPEID(0).getSymbol().getText());
+    int lineNumber = ctx.ASSIGN_OPERATOR().getSymbol().getLine();
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
+    Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
 
     ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
     List<ExpressionNode> actuals = new ArrayList<>();
@@ -301,8 +299,8 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   // handles DispatchNodeAlt syntax
   public Tree visitDispatchNodeAlt(CoolParser.ExprContext ctx) {
 
-    int lineNumber = ctx.OBJECTID(0).getSymbol().getLine();
-    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
+    int lineNumber = ctx.OBJECTID().getSymbol().getLine();
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     ExpressionNode exprNode = (ExpressionNode) visit(ctx.expr(0));
     List<ExpressionNode> actuals = new ArrayList<>();
 
@@ -320,8 +318,8 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   // handles only DispatchNode syntax
   public Tree visitDispatchNode(CoolParser.ExprContext ctx) {
 
-    int lineNumber = ctx.OBJECTID(0).getSymbol().getLine();
-    Symbol name = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
+    int lineNumber = ctx.OBJECTID().getSymbol().getLine();
+    Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     ExpressionNode exprNode = new NoExpressionNode(0);
     List<ExpressionNode> actuals = new ArrayList<>();
 
@@ -400,35 +398,70 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   public Tree visitLetNode(CoolParser.ExprContext ctx) {
-    int lineNumber = ctx.OBJECTID(0).getSymbol().getLine();
-    Symbol id = StringTable.idtable.addString(ctx.OBJECTID(0).getSymbol().getText());
-    Symbol type = StringTable.idtable.addString(ctx.TYPEID(0).getSymbol().getText());
 
-    int expressionListSize = ctx.expr().size();
-    int lastExpression = expressionListSize - 1;
-    ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new NoExpressionNode(0)
-        : (ExpressionNode) visit(ctx.expr(0));
-    ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
+    int lineNumber = ctx.LET().getSymbol().getLine();
+    Symbol name;
+    Symbol type;
+    ExpressionNode init;
 
-    return new LetNode(lineNumber, id, type, init, body);
+    // body will always last expression, i.e expr after IN
+    ExpressionNode body = (ExpressionNode) visit(ctx.expr(0));
 
-    // ctx.expr() = [a <- "something", b <- "else", c <- "last", { body }]
+    // initialized to satisfy fckn java
+    LetNode letNode = null;
 
-    // if (ctx.expr().size() > 2) {
-    // ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new
-    // NoExpressionNode(0)
-    // : (ExpressionNode) visit(ctx.expr(0));
+    // Check if we declare more than one variable for let
+    if (ctx.letvars().size() > 1) {
+      List<CoolParser.LetvarsContext> letctx = ctx.letvars();
+      int lastLet = letctx.size() - 1;
 
-    // ExpressionNode body = (ExpressionNode) visit(ctx.expr());
-    // return new LetNode(lineNumber, id, type, init, body);
-    // } else {
-    // ExpressionNode init = (ctx.ASSIGN_OPERATOR() == null) ? new
-    // NoExpressionNode(0)
-    // : (ExpressionNode) visit(ctx.expr(0));
+      for (int i = lastLet; i > -1; i--) {
 
-    // ExpressionNode body = (ExpressionNode) visit(ctx.expr(lastExpression));
-    // return new LetNode(lineNumber, id, type, init, body);
-    // }
+        // checks for assignment on var declaration
+        if (letAssigned(letctx.get(i))) {
+          // has assignment so must visit expreesionNode
+          init = (ExpressionNode) visit(letctx.get(i).expr());
+        } else {
+          // no assignment so empty expressionNode, we only care about name and type
+          init = new NoExpressionNode(lineNumber);
+        }
+
+        name = StringTable.idtable.addString(letctx.get(i).OBJECTID().getSymbol().getText());
+        type = StringTable.idtable.addString(letctx.get(i).TYPEID().getSymbol().getText());
+
+        if (i == lastLet) {
+          letNode = new LetNode(lineNumber, name, type, init, body);
+        } else {
+          letNode = new LetNode(lineNumber, name, type, init, letNode);
+        }
+      }
+    }
+    // Let with only one identifier
+    else {
+      CoolParser.LetvarsContext letctx = ctx.letvars(0);
+      name = StringTable.idtable.addString(letctx.OBJECTID().getSymbol().getText());
+      type = StringTable.idtable.addString(letctx.TYPEID().getSymbol().getText());
+
+      if (letAssigned(letctx)) {
+        init = (ExpressionNode) visit(letctx.expr());
+      } else {
+        init = new NoExpressionNode(lineNumber);
+      }
+
+      letNode = new LetNode(lineNumber, name, type, init, body);
+
+    }
+
+    return letNode;
+
+  }
+
+  // let auxiliary method
+  public boolean letAssigned(CoolParser.LetvarsContext ctx) {
+    if (ctx.ASSIGN_OPERATOR() != null) {
+      return true;
+    }
+    return false;
   }
 
   public Tree visitCaseNode(CoolParser.ExprContext ctx) {

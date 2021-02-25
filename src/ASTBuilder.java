@@ -279,7 +279,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
   }
 
   public Tree visitStaticDispatchNode(CoolParser.ExprContext ctx) {
-    int lineNumber = ctx.ASSIGN_OPERATOR().getSymbol().getLine();
+    int lineNumber = ctx.OBJECTID().getSymbol().getLine();
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
     Symbol type = StringTable.idtable.addString(ctx.TYPEID().getSymbol().getText());
 
@@ -320,8 +320,10 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
 
     int lineNumber = ctx.OBJECTID().getSymbol().getLine();
     Symbol name = StringTable.idtable.addString(ctx.OBJECTID().getSymbol().getText());
-    ExpressionNode exprNode = new NoExpressionNode(0);
+    ExpressionNode exprNode = new ObjectNode(lineNumber, new Symbol("self", 0));
     List<ExpressionNode> actuals = new ArrayList<>();
+
+    DispatchNode dispatchNode;
 
     // Check for no parameters in method
     if (ctx.expr().size() != 0) {

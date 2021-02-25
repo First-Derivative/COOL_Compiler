@@ -381,6 +381,10 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.LESS_EQ_OPERATOR().getSymbol().getLine();
     ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    if(left instanceof LEqNode ||right instanceof LEqNode){
+      System.err.println( "\"" + Flags.in_filename+ "\", "+"line "+ lineNumber +": syntax error at or near '='");
+      Utilities.fatalError(Utilities.ErrorCode.LEXER_PARSER);
+    }
     return new LEqNode(lineNumber, left, right);
   }
 
@@ -388,6 +392,10 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.EQ_OPERATOR().getSymbol().getLine();
     ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+    if(left instanceof EqNode ||right instanceof EqNode){
+      System.err.println( "\"" + Flags.in_filename+ "\", "+"line "+ lineNumber +": syntax error at or near '='");
+      Utilities.fatalError(Utilities.ErrorCode.LEXER_PARSER);
+    }
     return new EqNode(lineNumber, left, right);
   }
 

@@ -64,20 +64,20 @@ expr:
 	// IsVoidNode
 	| ISVOID expr
 
+	// DivideNode
+	| expr DIV_OPERATOR expr
+
+	// MulNode
+	| expr MULT_OPERATOR expr
+
+	// NegNode
+	| INT_COMPLEMENT_OPERATOR expr
+
 	// PlusNode
 	| expr PLUS_OPERATOR expr
 
 	// SubNode
 	| expr MINUS_OPERATOR expr
-
-	// MulNode
-	| expr MULT_OPERATOR expr
-
-	// DivideNode
-	| expr DIV_OPERATOR expr
-
-	// NegNode
-	| INT_COMPLEMENT_OPERATOR expr
 
 	// LTNode
 	| expr LESS_OPERATOR expr

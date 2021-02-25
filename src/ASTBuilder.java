@@ -395,7 +395,7 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.IF().getSymbol().getLine();
     ExpressionNode cond = (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode thenExpr = (ExpressionNode) visit(ctx.expr(1));
-    ExpressionNode elseExpr = (ExpressionNode) visit(ctx.expr(1));
+    ExpressionNode elseExpr = (ExpressionNode) visit(ctx.expr(2));
     return new CondNode(lineNumber, cond, thenExpr, elseExpr);
   }
 

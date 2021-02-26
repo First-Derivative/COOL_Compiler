@@ -63,8 +63,6 @@ tokens {
 
 /* Comments */
 SINGLE_LINE_COMMENT: '--' (.)*? ('\n' | '\r' | EOF) -> skip;
-// MULTI_LINE_COMMENT: '(*' (MULTI_LINE_COMMENT | .)*? '*)' -> skip; UNMATCHED_COMMENT: '*)' {
-// createError("Unmatched *)"); }; EOF_COMMENT: '(*' .(EOF) { createError("EOF in comment"); };
 
 UNMATCHED_COMMENT: '*)' { createError("Unmatched *)"); };
 
@@ -143,10 +141,11 @@ OBJECTID: [a-z] (LETTER_ | DIGIT)*;
 TYPEID: [A-Z] (LETTER_ | DIGIT)*;
 WS: (' ' | '\t' | '\n' | '\r' | '\f' | '\u000B')+ -> skip;
 
-// STRING_CONST: '"' ( ('\\' | '\t' | '\r\n' | '\r' | '\n' | '\\"') | ~('\\' | '\t' | '\r' | '\n' |
-// '"') )* '"' { checkString(getText()); };
+STRING_CONST:
+	UNTERMINATED_STRING_CONST '"' { checkString(getText()); };
 
-STRING_CONST: '"' ('\\"' | .)*? '"' { checkString(getText()); };
+UNTERMINATED_STRING_CONST:
+	'"' (~["\\\n] | '\\' (. | EOF))* { createError("Unterminated string constant"); };
 
 INCOMPLETE_STRING: ('"' ( '\\' | '\\"' | WS | ~('\\' | '"'))*) (
 		EOF

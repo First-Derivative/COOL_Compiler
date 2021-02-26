@@ -72,6 +72,7 @@ COMMENT_CONTENT: . -> skip;
 mode INNER_COMMENT;
 NEW_INNER_COMMENT: '(*' -> pushMode(INNER_COMMENT), skip;
 INNER_COMMENT_EOF: '*)' EOF { createError("EOF in comment"); };
+INNER_COMMENT_EOF_SECOND: . (EOF) { createError("EOF in comment"); };
 CLOSE_INNER_COMMENT: '*)' -> popMode, skip;
 INNER_COMMENT_CONTENT: . -> skip;
 
@@ -145,9 +146,11 @@ UNTERMINATED_STRING_CONST:
 	String text = getText();
 
 	for (int i=0; i<text.length(); i++) {
-		if (text.charAt(i) == '\\' && text.charAt(i+1) == '\000') {
-			createError("String contains escaped null character.");
-			return;
+		if (text.charAt(i) == '\\' && i + 1 < text.length() - 1) {
+			if (text.charAt(i+1) == '\000') {
+				createError("String contains escaped null character.");
+				return;
+			}
 		} else if (text.charAt(i) == '\000') {
 			createError("String contains null character.");
 			return; 

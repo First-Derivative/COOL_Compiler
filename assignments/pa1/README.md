@@ -1,6 +1,10 @@
 # README file for Programming Assignment 1: Frontend
 
-- Errors handled by the lexer
+- Lexer tested on both participants `PA0` and other provided example files
+
+  - Note about lexer: We remove the outer quotes from strings - which is clearly intended in the parser, but in the lexer reference outputs strings still have quotes
+
+- Errors handled by the lexer (most included in `bad.cl`)
   - `Unterminated string constant`
   - `String contains null character`/`String contains escaped null character` Escaped and unescaped null characters in strings which don't close and in strings which close
   - `Unterminated string constant` When a string is not closed, it will conitnue on the next line
@@ -11,8 +15,6 @@
   - `Unmatched *)` When a comment has not been closed
   - `EOF in comment` When a comment (or inner comment) contains EOF
     - i.e. `(* something`
-
-Note about lexer: We remove the outer quotes from strings - which is clearly intended in the parser, but in the lexer reference outputs strings still have quotes
 
 ---
 

@@ -145,11 +145,7 @@ STRING_CONST:
 	UNTERMINATED_STRING_CONST '"' { checkString(getText()); };
 
 UNTERMINATED_STRING_CONST:
-	'"' (~["\\\n] | '\\' (. | EOF))* { createError("Unterminated string constant"); };
-
-INCOMPLETE_STRING: ('"' ( '\\' | '\\"' | WS | ~('\\' | '"'))*) (
-		EOF
-	) {
+	'"' (~["\\\n] | '\\' (. | EOF))* { 
 	String text = getText();
 
 	for (int i=0; i<text.length(); i++) {
@@ -157,14 +153,12 @@ INCOMPLETE_STRING: ('"' ( '\\' | '\\"' | WS | ~('\\' | '"'))*) (
 			createError("String contains null character.");
 			return; 
 		}
-		
-		if (text.charAt(i) == '\n' && (i != text.length() - 1)) {
-			createError("Unterminated string constant");
-			return; 
-		}
 	}
 	
-	createError("EOF in string constant"); 
+	createError("Unterminated string constant"); 
 };
+
+INCOMPLETE_STRING:
+	'"' (~["\\\n] | '\\' .)* (EOF) {	createError("EOF in string constant"); };
 
 ERROR: .;

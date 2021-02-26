@@ -14,15 +14,11 @@ tokens {
 		StringBuilder buf = new StringBuilder(0);
 
 		for(int i = 0; i < text.length(); i++) {
-			// IDK IF WE NEED THIS FIRST CHECK
 			if (text.charAt(i) == '\\' && text.charAt(i+1) == '\000') {
 				createError("String contains escaped null character.");
 				return;
 			} else if (text.charAt(i) == '\000') {
 				createError("String contains null character.");
-				return;
-			} else if (text.charAt(i) == '\n') {
-				createError("Unterminated string constant");
 				return;
 			} else if(text.charAt(i) == '\\') {
 				if(text.charAt(i+1) == 'n') {
@@ -149,7 +145,10 @@ UNTERMINATED_STRING_CONST:
 	String text = getText();
 
 	for (int i=0; i<text.length(); i++) {
-		if (text.charAt(i) == '\000') {
+		if (text.charAt(i) == '\\' && text.charAt(i+1) == '\000') {
+			createError("String contains escaped null character.");
+			return;
+		} else if (text.charAt(i) == '\000') {
 			createError("String contains null character.");
 			return; 
 		}

@@ -1,5 +1,21 @@
 # README file for Programming Assignment 1: Frontend
 
+- Errors handled by the lexer
+  - `Unterminated string constant`
+  - `String contains null character`/`String contains escaped null character` Escaped and unescaped null characters in strings which don't close and in strings which close
+  - `Unterminated string constant` When a string is not closed, it will conitnue on the next line
+    - i.e. `"something <new_line> "` will consider line 1 as an unterminated string, and same with line 2
+  - `EOF in string constant` String's which contain an EOF aka the ending of a document/page
+    - i.e. `"something`
+  - `String constant too long` when a string's length (after building it) is greater than 1024
+  - `Unmatched *)` When a comment has not been closed
+  - `EOF in comment` When a comment (or inner comment) contains EOF
+    - i.e. `(* something`
+
+Note about lexer: We remove the outer quotes from strings - which is clearly intended in the parser, but in the lexer reference outputs strings still have quotes
+
+---
+
 - For this assignment, you need the following files:
 
   - assignments/pa1/README

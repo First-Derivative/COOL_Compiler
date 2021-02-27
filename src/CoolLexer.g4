@@ -142,7 +142,7 @@ STRING_CONST:
 	UNTERMINATED_STRING_CONST '"' { checkString(getText()); };
 
 UNTERMINATED_STRING_CONST:
-	'"' (~["\\\n] | '\\' (. | EOF))* { 
+	'"' (~["\\\n] | '\\' .)* { 
 	String text = getText();
 
 	for (int i=0; i<text.length(); i++) {

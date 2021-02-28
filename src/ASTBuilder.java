@@ -3,6 +3,8 @@ import java.util.*;
 
 import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
+import org.stringtemplate.v4.compiler.STParser.templateAndEOF_return;
+
 // TO DO:
 // Verify ASTBuilder *: Let, Case, Branch
 // Consider Error Handling
@@ -353,6 +355,19 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.MINUS_OPERATOR().getSymbol().getLine();
     ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+
+    // check for plus-first case
+    if (ctx.expr(1).PLUS_OPERATOR() != null) {
+      BinopNode tempPlus = (BinopNode) visit(ctx.expr(1));
+
+      ExpressionNode b = tempPlus.getE1();
+      ExpressionNode c = tempPlus.getE2();
+
+      SubNode subNode = new SubNode(lineNumber, left, b);
+
+      return new PlusNode(lineNumber, subNode, c);
+    }
+
     return new SubNode(lineNumber, left, right);
   }
 
@@ -360,6 +375,19 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.MULT_OPERATOR().getSymbol().getLine();
     ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
+
+    // check div-first case
+    if (ctx.expr(1).DIV_OPERATOR() != null) {
+      BinopNode tempDiv = (BinopNode) visit(ctx.expr(1));
+
+      ExpressionNode b = tempDiv.getE1();
+      ExpressionNode c = tempDiv.getE2();
+
+      MulNode mulNode = new MulNode(lineNumber, left, b);
+
+      return new DivideNode(lineNumber, mulNode, c);
+    }
+
     return new MulNode(lineNumber, left, right);
   }
 
@@ -381,8 +409,8 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.LESS_EQ_OPERATOR().getSymbol().getLine();
     ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
-    if(left instanceof LEqNode ||right instanceof LEqNode){
-      System.err.println( "\"" + Flags.in_filename+ "\", "+"line "+ lineNumber +": syntax error at or near '='");
+    if (left instanceof LEqNode || right instanceof LEqNode) {
+      System.err.println("\"" + Flags.in_filename + "\", " + "line " + lineNumber + ": syntax error at or near '='");
       Utilities.fatalError(Utilities.ErrorCode.LEXER_PARSER);
     }
     return new LEqNode(lineNumber, left, right);
@@ -392,8 +420,8 @@ public class ASTBuilder extends CoolParserBaseVisitor<Tree> {
     int lineNumber = ctx.EQ_OPERATOR().getSymbol().getLine();
     ExpressionNode left = (ExpressionNode) visit(ctx.expr(0));
     ExpressionNode right = (ExpressionNode) visit(ctx.expr(1));
-    if(left instanceof EqNode ||right instanceof EqNode){
-      System.err.println( "\"" + Flags.in_filename+ "\", "+"line "+ lineNumber +": syntax error at or near '='");
+    if (left instanceof EqNode || right instanceof EqNode) {
+      System.err.println("\"" + Flags.in_filename + "\", " + "line " + lineNumber + ": syntax error at or near '='");
       Utilities.fatalError(Utilities.ErrorCode.LEXER_PARSER);
     }
     return new EqNode(lineNumber, left, right);

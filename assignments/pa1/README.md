@@ -15,7 +15,7 @@
   - `Unmatched *)` When a comment has not been closed
   - `EOF in comment` When a comment (or inner comment) contains EOF
     - i.e. `(* something`
-
+  - `Lex and Parse errors` When you encounter any associativity vagueness, compilation a les and parse error will halt compilation at appropriate line number
 ---
 
 - For this assignment, you need the following files:

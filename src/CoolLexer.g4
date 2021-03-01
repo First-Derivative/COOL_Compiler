@@ -133,7 +133,7 @@ FALSE: 'f' [Aa] [Ll] [Ss] [Ee];
 
 /* VALUES */
 
-INT_CONST: '-'? DIGIT;
+INT_CONST: DIGIT;
 OBJECTID: [a-z] (LETTER_ | DIGIT)*;
 TYPEID: [A-Z] (LETTER_ | DIGIT)*;
 WS: (' ' | '\t' | '\n' | '\r' | '\f' | '\u000B')+ -> skip;

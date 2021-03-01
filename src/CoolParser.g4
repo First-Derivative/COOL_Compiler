@@ -32,11 +32,8 @@ branch: OBJECTID COLON TYPEID RIGHTARROW expr SEMICOLON;
 letvars: OBJECTID COLON TYPEID (ASSIGN_OPERATOR expr)?;
 
 expr:
-	// AssignNode
-	OBJECTID ASSIGN_OPERATOR expr
-
 	// StaticDispatchNode <expr>@<type>.id(<expr>,...,<expr>)
-	| expr (AT TYPEID)? PERIOD OBJECTID PARENT_OPEN (
+	expr (AT TYPEID)? PERIOD OBJECTID PARENT_OPEN (
 		expr (COMMA expr)*
 	)? PARENT_CLOSE
 
@@ -108,6 +105,9 @@ expr:
 
 	// BoolConstNode
 	| FALSE
+
+	// AssignNode
+	| OBJECTID ASSIGN_OPERATOR expr
 
 	// LetNode
 	| LET letvars (COMMA letvars)* IN expr;

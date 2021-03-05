@@ -16,7 +16,7 @@ class InheritanceGraph {
     this.root = newRoot;
   }
 
-  public InheritanceGraphNode findParentNode(Symbol parent) {
+  public InheritanceGraphNode findNode(Symbol parent) {
     LinkedList<InheritanceGraphNode> queue = new LinkedList<InheritanceGraphNode>();
     queue.add(this.root); // start at root
 
@@ -33,11 +33,9 @@ class InheritanceGraph {
       for (InheritanceGraphNode child : current.getChildren()) {
         queue.add(child);
       }
+
     }
 
-    /*
-     * THROW ERROR IF NOT VALID PARENT (INVALID INHERITANCE)
-     */
     return null;
   }
 
@@ -97,12 +95,91 @@ class ClassTable {
   InheritanceGraph inheritanceGraph = new InheritanceGraph();
 
   public ClassTable(List<ClassNode> userDefinedClasses) {
-    this.installBasicClasses();
+    // Consutrcting classes arraylists for error checking/handling
+    ArrayList<ClassNode> builtInClasses = this.installBasicClasses();
+    ArrayList<ClassNode> allClasses = new ArrayList<ClassNode>(builtInClasses);
 
+    // Adding built-in classes to inhertiance graph
+    InheritanceGraphNode Object_node = new InheritanceGraphNode(builtInClasses.get(0));
+    for (int i = 1; i < builtInClasses.size(); i++) {
+      ClassNode builtIn = builtInClasses.get(i);
+      Object_node.addChild(builtIn);
+    }
+    this.inheritanceGraph.setRoot(Object_node);
+
+    // check A: that userDefinedClasses are valid
     for (ClassNode userClass : userDefinedClasses) {
-      Symbol parentClass = userClass.getParent();
 
-      InheritanceGraphNode parentNode = inheritanceGraph.findParentNode(parentClass);
+      String inherits = userClass.getParent().getName();
+      String userClassName = userClass.getName().getName();
+
+      // check that userClasses aren't inheriting from specific builtInClasses
+      if (inherits.equals("Bool")) {
+        // good.cl:L: Class X cannot inherit class Bool.
+        Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
+            + userClassName + " cannot inherit class Bool.");
+      } else if (inherits.equals("String")) {
+        // good.cl:L: Class X cannot inherit class String.
+        Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
+            + userClassName + " annot inherit class String.");
+      } else if (inherits.equals("Int")) {
+        // good.cl:L: Class X cannot inherit class Int.
+        Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
+            + userClassName + " cannot inherit class Int.");
+      }
+      // endof check A
+
+      // check B: that userClasses aren't redefining builtInClasses
+      for (ClassNode existingClass : builtInClasses) {
+        String existingClassName = existingClass.getName().getName();
+
+        if (userClassName.equals(existingClassName)) {
+          Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
+              + userClassName + " was previously defined.");
+        }
+      }
+      // endof check B
+
+      allClasses.add(userClass);
+    }
+
+    // Building valid inheritance graph
+    for (ClassNode userClass : userDefinedClasses) {
+
+      InheritanceGraphNode exists = this.inheritanceGraph.findNode(userClass.getName());
+      if (exists != null) {
+        continue;
+      }
+
+      Symbol parentSymbol = userClass.getParent();
+      String parentSymbolName = parentSymbol.getName();
+      String userClassName = userClass.getName().getName();
+
+      // Check C: for inheriting from undefined classes
+      Boolean foundParent = false;
+      for (ClassNode existingClass : allClasses) {
+        String existingClassName = existingClass.getName().getName();
+        if (existingClassName.equals(parentSymbolName)) {
+          foundParent = true;
+        }
+      }
+      if (!foundParent) {
+        // good.cl:13: Class A inherits from an undefined class Str.
+        Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
+            + userClassName + " inherits from an undefined class " + parentSymbolName + ".");
+      }
+      // end of Check C
+
+      // Constructing valid inheritance graph
+      InheritanceGraphNode parentNode = inheritanceGraph.findNode(parentSymbol);
+      if (parentNode == null) {
+        parentNode = traverseInheritanceChain(userClass, userDefinedClasses);
+
+        if (parentNode == null) { // Inheritance cycle detected, stop executing
+          return;
+        }
+      }
+
       InheritanceGraphNode newClass = new InheritanceGraphNode(userClass);
       parentNode.getChildren().add(newClass);
     }
@@ -110,25 +187,11 @@ class ClassTable {
     this.inheritanceGraph.print();
   }
 
-  /**
-   * Creates data structures representing basic Cool classes (Object, IO, Int,
-   * Bool, String). Please note: as is this method does not do anything useful;
-   * you will need to edit it to make if do what you want.
-   */
-  private void installBasicClasses() {
+  private ArrayList<ClassNode> installBasicClasses() {
 
     Symbol filename = StringTable.idtable.addString(Flags.in_filename);
 
     LinkedList<FormalNode> formals;
-
-    // The following demonstrates how to create dummy parse trees to
-    // refer to basic Cool classes. There's no need for method
-    // bodies -- these are already built into the runtime system.
-
-    // IMPORTANT: The results of the following expressions are
-    // stored in local variables. You will want to do something
-    // with those variables at the end of this method to make this
-    // code meaningful.
 
     // The Object class has no parent class. Its methods are
     // cool_abort() : Object aborts the program
@@ -207,17 +270,70 @@ class ClassTable {
 
     Str_class.add(new MethodNode(0, TreeConstants.substr, formals, TreeConstants.Str, new NoExpressionNode(0)));
 
-    /*
-     * Add Object_class, IO_class, Int_class, Bool_class, and Str_class to the
-     * inheritance graph
-     */
+    // return arraylist of all builtInClasses for use elsewhere
+    ArrayList<ClassNode> classes = new ArrayList<ClassNode>();
+    classes.add(Object_class);
+    classes.add(IO_class);
+    classes.add(Int_class);
+    classes.add(Str_class);
+    classes.add(Bool_class);
 
-    InheritanceGraphNode Object_node = new InheritanceGraphNode(Object_class);
-    Object_node.addChild(IO_class);
-    Object_node.addChild(Str_class);
-    Object_node.addChild(Int_class);
-    Object_node.addChild(Bool_class);
-    this.inheritanceGraph.setRoot(Object_node);
+    return classes;
   }
 
+  private InheritanceGraphNode traverseInheritanceChain(ClassNode currentClass, List<ClassNode> userDefinedClasses) {
+    InheritanceGraphNode targetNode = null;
+    ArrayList<ClassNode> stack = new ArrayList<ClassNode>();
+    ClassNode firstParent = getClassNode(currentClass.getParent(), userDefinedClasses);
+    stack.add(firstParent);
+
+    while (stack.size() > 0) {
+      ClassNode current = stack.get(0);
+
+      InheritanceGraphNode currentParentNode = this.inheritanceGraph.findNode(current.getParent());
+
+      if (currentParentNode == null) {
+        // check for cyclic
+        if (stack.contains(getClassNode(current.getParent(), userDefinedClasses))) {
+          stack.remove(0);
+          stack.add(stack.size(), currentClass);
+
+          for (ClassNode cn : stack) {
+            Utilities.semantError(cn)
+                .println(Flags.in_filename + ":" + cn.getLineNumber() + ": Class " + cn.getName().getName()
+                    + ", or an ancestor of " + cn.getName().getName() + ", is involved in an inheritance cycle.");
+          }
+
+          return null;
+        }
+
+        stack.add(0, getClassNode(current.getParent(), userDefinedClasses));
+
+      } else {
+        stack.remove(0);
+        targetNode = currentParentNode.addChild(current);
+
+        if (stack.size() == 0) {
+          return targetNode;
+        }
+      }
+    }
+
+    return targetNode;
+  }
+
+  // Auxiliary method for getting ClassNode from symbols
+  private ClassNode getClassNode(Symbol sym, List<ClassNode> userDefinedClasses) {
+    ClassNode currentClassNode = null;
+
+    for (ClassNode cn : userDefinedClasses) {
+
+      if (sym.getName().equals(cn.getName().getName())) {
+        currentClassNode = cn;
+        break;
+      }
+    }
+
+    return currentClassNode;
+  }
 }

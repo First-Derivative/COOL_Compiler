@@ -126,11 +126,15 @@ class ClassTable {
         // good.cl:L: Class X cannot inherit class Int.
         Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
             + userClassName + " cannot inherit class Int.");
+      } else if (inherits.equals("SELF_TYPE")) {
+        // good.cl:L: Class X cannot inherit class SELF_TYPE.
+        Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
+            + userClassName + " cannot inherit class SELF_TYPE.");
       }
       // endof check A
 
-      // check B: that userClasses aren't redefining builtInClasses
-      for (ClassNode existingClass : builtInClasses) {
+      // check B: that userClasses aren't redefining existing class names
+      for (ClassNode existingClass : allClasses) {
         String existingClassName = existingClass.getName().getName();
 
         if (userClassName.equals(existingClassName)) {
@@ -164,9 +168,10 @@ class ClassTable {
         }
       }
       if (!foundParent) {
-        // good.cl:13: Class A inherits from an undefined class Str.
+        // good.cl:13: Class A inherits from an undefined class <>.
         Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
             + userClassName + " inherits from an undefined class " + parentSymbolName + ".");
+        break;
       }
       // end of Check C
 
@@ -184,7 +189,7 @@ class ClassTable {
       parentNode.getChildren().add(newClass);
     }
 
-    this.inheritanceGraph.print();
+    // this.inheritanceGraph.print();
   }
 
   private ArrayList<ClassNode> installBasicClasses() {
@@ -293,8 +298,10 @@ class ClassTable {
       InheritanceGraphNode currentParentNode = this.inheritanceGraph.findNode(current.getParent());
 
       if (currentParentNode == null) {
+        ClassNode parentClassNode = getClassNode(current.getParent(), userDefinedClasses);
+
         // check for cyclic
-        if (stack.contains(getClassNode(current.getParent(), userDefinedClasses))) {
+        if (stack.contains(parentClassNode)) {
           stack.remove(0);
           stack.add(stack.size(), currentClass);
 
@@ -307,7 +314,7 @@ class ClassTable {
           return null;
         }
 
-        stack.add(0, getClassNode(current.getParent(), userDefinedClasses));
+        stack.add(0, parentClassNode);
 
       } else {
         stack.remove(0);

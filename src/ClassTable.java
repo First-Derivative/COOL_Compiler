@@ -16,7 +16,7 @@ class InheritanceGraph {
     this.root = newRoot;
   }
 
-  public InheritanceGraphNode findNode(Symbol parent) {
+  public InheritanceGraphNode findNode(Symbol target) {
     LinkedList<InheritanceGraphNode> queue = new LinkedList<InheritanceGraphNode>();
     queue.add(this.root); // start at root
 
@@ -26,7 +26,7 @@ class InheritanceGraph {
       current = queue.pollFirst();
       Symbol currentClass = current.getValue().getName();
 
-      if (currentClass.getName().equals(parent.getName())) {
+      if (currentClass.getName().equals(target.getName())) {
         return current;
       }
 
@@ -92,9 +92,14 @@ class InheritanceGraphNode {
  */
 class ClassTable {
 
+  List<ClassNode> userDefinedClasses = null;
   InheritanceGraph inheritanceGraph = new InheritanceGraph();
 
   public ClassTable(List<ClassNode> userDefinedClasses) {
+    this.userDefinedClasses = userDefinedClasses;
+  }
+
+  public InheritanceGraph getInheritanceGraph() {
     // Consutrcting classes arraylists for error checking/handling
     ArrayList<ClassNode> builtInClasses = this.installBasicClasses();
     ArrayList<ClassNode> allClasses = new ArrayList<ClassNode>(builtInClasses);
@@ -106,6 +111,14 @@ class ClassTable {
       Object_node.addChild(builtIn);
     }
     this.inheritanceGraph.setRoot(Object_node);
+
+    // check if class `Main` has been defined
+    Boolean foundMain = checkMain(userDefinedClasses);
+    if (!foundMain) {
+      // err out: Class Main is not defined.
+      System.err.println("Class Main is not defined.");
+      Utilities.fatalError(Utilities.ErrorCode.ERROR_SEMANT);
+    }
 
     // check A: that userDefinedClasses are valid
     for (ClassNode userClass : userDefinedClasses) {
@@ -121,7 +134,7 @@ class ClassTable {
       } else if (inherits.equals("String")) {
         // good.cl:L: Class X cannot inherit class String.
         Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
-            + userClassName + " annot inherit class String.");
+            + userClassName + " cannot inherit class String.");
       } else if (inherits.equals("Int")) {
         // good.cl:L: Class X cannot inherit class Int.
         Utilities.semantError(userClass).println(Flags.in_filename + ":" + userClass.getLineNumber() + ": Class "
@@ -181,7 +194,7 @@ class ClassTable {
         parentNode = traverseInheritanceChain(userClass, userDefinedClasses);
 
         if (parentNode == null) { // Inheritance cycle detected, stop executing
-          return;
+          return null;
         }
       }
 
@@ -189,7 +202,7 @@ class ClassTable {
       parentNode.getChildren().add(newClass);
     }
 
-    // this.inheritanceGraph.print();
+    return this.inheritanceGraph;
   }
 
   private ArrayList<ClassNode> installBasicClasses() {
@@ -327,6 +340,19 @@ class ClassTable {
     }
 
     return targetNode;
+  }
+
+  // Auxiliary method for checking if Main exists from userDefinedClasses
+  private Boolean checkMain(List<ClassNode> userDefinedClasses) {
+    Boolean foundMain = false;
+
+    for (ClassNode cn : userDefinedClasses) {
+      if (cn.getName().getName().equals("Main")) {
+        foundMain = true;
+      }
+    }
+
+    return foundMain;
   }
 
   // Auxiliary method for getting ClassNode from symbols

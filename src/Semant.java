@@ -2,21 +2,22 @@ import ast.ProgramNode;
 
 class Semant {
 
-    public static ClassTable classTable;
-    public static SymbolTable symtable = new SymbolTable();
+  public static ClassTable classTable;
+  public static SymbolTable symtable = new SymbolTable();
 
-    public static void analyze(ProgramNode program) {
+  public static void analyze(ProgramNode program) {
 
-        classTable = new ClassTable(program.getClasses());
+    classTable = new ClassTable(program.getClasses());
+    InheritanceGraph inheritanceGraph = classTable.getInheritanceGraph();
 
-        ScopeCheckingVisitor scopecheckVisitor = new ScopeCheckingVisitor();
-        program.accept(scopecheckVisitor, null);
-        TypeCheckingVisitor typecheckVisitor = new TypeCheckingVisitor();
-        program.accept(typecheckVisitor, null);
+    ScopeCheckingVisitor scopecheckVisitor = new ScopeCheckingVisitor();
+    program.accept(scopecheckVisitor, null);
+    TypeCheckingVisitor typecheckVisitor = new TypeCheckingVisitor();
+    program.accept(typecheckVisitor, null);
 
-        if (Utilities.errors()) {
-            Utilities.fatalError(Utilities.ErrorCode.ERROR_SEMANT);
-        }
+    if (Utilities.errors()) {
+      Utilities.fatalError(Utilities.ErrorCode.ERROR_SEMANT);
     }
+  }
 
 }

@@ -10,7 +10,7 @@ class Semant {
     classTable = new ClassTable(program.getClasses());
     InheritanceGraph inheritanceGraph = classTable.getInheritanceGraph();
 
-    ScopeCheckingVisitor scopecheckVisitor = new ScopeCheckingVisitor();
+    ScopeCheckingVisitor scopecheckVisitor = new ScopeCheckingVisitor(symtable);
     program.accept(scopecheckVisitor, null);
     TypeCheckingVisitor typecheckVisitor = new TypeCheckingVisitor();
     program.accept(typecheckVisitor, null);

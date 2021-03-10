@@ -100,6 +100,7 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
     return Data;
   }
 
+  // Visiting ClassNode
   @Override
   public Object visit(ClassNode node, Object Data) {
     String className = node.getName().getName();
@@ -128,6 +129,18 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
     return Data;
   }
 
+  // Visitng AttributeNode
+  @Override 
+  public Object visit(AttributeNode node, Object Data) {
+    System.out.println(node.getName().getName() + "is being added");
+    scope.addId(node.getName(), new ScopeData(ScopeData.SymbolKinds.VAR, node.getType_decl()));
+    if(node.getInit() != null) {
+      visit(node.getInit(), Data);
+    }
+    return Data;    
+  }
+
+  // Visiting MethodNode
   @Override
   public Object visit(MethodNode node, Object Data) {
     for (FormalNode f : node.getFormals()) {
@@ -135,34 +148,75 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
 
       scope.addId(((FormalNode) f).getName(),
           new ScopeData(ScopeData.SymbolKinds.VAR, ((FormalNode) f).getType_decl()));
-
-      System.out.println(scope);
     }
 
     visit((ExpressionNode) node.getExpr(), Data);
     return Data;
   }
 
+  // Visitng ExpressionNode
   @Override
   public Object visit(ExpressionNode node, Object Data) {
     System.out.println("visiting expression node");
-
+    
+    // Check for ObjectNode
     if (node instanceof ObjectNode) {
       visit((ObjectNode) node, Data);
+    }
+
+    // Check for BlockNode
+    if (node instanceof BlockNode) {
+      scope.enterScope();
+      visit((BlockNode) node, Data);
+      System.out.println(scope);
+      scope.exitScope();
+    }
+
+    // Check for LetNode
+    if (node instanceof LetNode) {
+      scope.enterScope();
+      visit((LetNode) node, Data);
+      System.out.println(scope);
+      scope.exitScope();
     }
 
     return Data;
   }
 
+  // Visiting ObjectNode
   @Override
   public Object visit(ObjectNode node, Object Data) {
     System.out.println("visiting object node");
 
-    ScopeData d = scope.probe(node.getName());
+    ScopeData d = scope.lookup(node.getName());
     if (d == null && !node.getName().getName().equals("self")) {
       Utilities.semantError(filename, node).println("Undeclared identifier " + node.getName());
     }
 
     return Data;
   }
+
+  // Visiting BlockNode 
+  @Override
+  public Object visit(BlockNode node, Object Data) {
+
+    for(ExpressionNode expr : node.getExprs()) {
+      visit(expr, Data);
+    }
+    
+    return Data;
+  }
+
+  // Visiting LetNode
+  @Override
+  public Object visit(LetNode node, Object Data) {
+    ExpressionNode init = node.getInit();
+    scope.addId(node.getIdentifier(), new ScopeData(ScopeData.SymbolKinds.VAR, node.getType_decl()));
+    ExpressionNode body = node.getBody();
+    visit(body, Data);
+
+    return Data;
+  }
+
+
 }

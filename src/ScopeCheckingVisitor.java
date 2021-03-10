@@ -88,15 +88,16 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
     for (ClassNode c : node.getClasses()) {
       scope.enterScope();
       scope.addId(c.getName(), new ScopeData(ScopeData.SymbolKinds.CLASS, TreeConstants.SELF_TYPE));
+      scope.addId(c.getName(), new ScopeData(ScopeData.SymbolKinds.VAR, TreeConstants.self));
       visit(c, Data);
 
-      System.out.println("printing symtable");
       System.out.println(scope);
+
       scope.exitScope();
     }
 
     scope.exitScope(); // exit global scope
-    return super.visit(node, Data);
+    return Data;
   }
 
   @Override
@@ -107,10 +108,13 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
       if (f instanceof MethodNode) {
         scope.addId(((MethodNode) f).getName(),
             new ScopeData(ScopeData.SymbolKinds.METHOD, ((MethodNode) f).getReturn_type()));
+        scope.enterScope();
         visit((MethodNode) f, className);
 
-      } else if (f instanceof AttributeNode) {
+        System.out.println(scope);
 
+        scope.exitScope();
+      } else if (f instanceof AttributeNode) {
         if (((AttributeNode) f).getName() == TreeConstants.self) {
           Utilities.semantError(filename, node).println("'self' cannot be the name of an attribute.");
         }
@@ -121,6 +125,44 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
       }
     }
 
-    return super.visit(node, className);
+    return Data;
+  }
+
+  @Override
+  public Object visit(MethodNode node, Object Data) {
+    for (FormalNode f : node.getFormals()) {
+      System.out.println("adding formals");
+
+      scope.addId(((FormalNode) f).getName(),
+          new ScopeData(ScopeData.SymbolKinds.VAR, ((FormalNode) f).getType_decl()));
+
+      System.out.println(scope);
+    }
+
+    visit((ExpressionNode) node.getExpr(), Data);
+    return Data;
+  }
+
+  @Override
+  public Object visit(ExpressionNode node, Object Data) {
+    System.out.println("visiting expression node");
+
+    if (node instanceof ObjectNode) {
+      visit((ObjectNode) node, Data);
+    }
+
+    return Data;
+  }
+
+  @Override
+  public Object visit(ObjectNode node, Object Data) {
+    System.out.println("visiting object node");
+
+    ScopeData d = scope.probe(node.getName());
+    if (d == null && !node.getName().getName().equals("self")) {
+      Utilities.semantError(filename, node).println("Undeclared identifier " + node.getName());
+    }
+
+    return Data;
   }
 }

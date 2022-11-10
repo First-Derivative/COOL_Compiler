@@ -1,0 +1,65 @@
+ais being added
+visiting expression node
+bis being added
+visiting expression node
+Scope 0: {}
+Scope 1: {main=ScopeData@2401f4c3, Main=ScopeData@7637f22, b=ScopeData@4926097b, a=ScopeData@762efe5d}
+Scope 2: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+
+Scope 0: {main=ScopeData@2401f4c3, Main=ScopeData@7637f22, b=ScopeData@4926097b, a=ScopeData@762efe5d}
+Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+
+Scope 0: {A=ScopeData@244038d0}
+Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+
+Scope 0: {B=ScopeData@5680a178}
+Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+
+_program
+
+  _class
+    Main
+    Object
+    "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+    (
+
+    _attr
+      a
+      A
+
+      _no_expr
+      : _no_type
+
+    _attr
+      b
+      B
+
+      _no_expr
+      : _no_type
+
+    _method
+      main
+      Object
+
+      _assign
+        b
+
+        _new
+          A
+        : _no_type
+      : _no_type
+    )
+
+  _class
+    A
+    Object
+    "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+    (
+    )
+
+  _class
+    B
+    A
+    "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+    (
+    )

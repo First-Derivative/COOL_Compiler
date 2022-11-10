@@ -1,0 +1,6 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/atoi.test", line 58: syntax error at or near INT_CONST = -1
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/atoi.test", line 58: syntax error at or near INT_CONST = -1
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/atoi.test", line 59: syntax error at or near INT_CONST = -1
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/atoi.test", line 59: syntax error at or near INT_CONST = -1
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/atoi.test", line 59: syntax error at or near PARENT_CLOSE = )
+Compilation halted due to lex and parse errors

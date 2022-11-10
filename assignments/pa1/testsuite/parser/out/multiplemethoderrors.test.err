@@ -1,0 +1,3 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/multiplemethoderrors.test", line 4: syntax error at or near CURLY_CLOSE = }
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/multiplemethoderrors.test", line 6: syntax error at or near CURLY_CLOSE = }
+Compilation halted due to lex and parse errors

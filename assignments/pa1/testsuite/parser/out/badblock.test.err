@@ -1,0 +1,4 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badblock.test", line 4: syntax error at or near TYPEID = A
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badblock.test", line 5: syntax error at or near INT_CONST = 3
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badblock.test", line 6: syntax error at or near PLUS_OPERATOR = +
+Compilation halted due to lex and parse errors

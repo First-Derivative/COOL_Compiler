@@ -1,0 +1,3 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/secondbindingerrored.test", line 2: syntax error at or near TYPEID = Bork
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/secondbindingerrored.test", line 2: syntax error at or near TYPEID = B
+Compilation halted due to lex and parse errors

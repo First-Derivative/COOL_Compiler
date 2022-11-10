@@ -1,0 +1,1399 @@
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/anattributenamedself.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/anattributenamedself.test
++ outname=anattributenamedself.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/anattributenamedself.test
++ errname=anattributenamedself.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/anattributenamedself.test
++ refrc=1
++ ./mysemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/anattributenamedself.test
++ myrc=1
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/anattributenamedself.test.err
++ '[' 1 -eq 0 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.out /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/anattributenamedself.test.out
+0a1,19
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {main=ScopeData@76ccd017, Main=ScopeData@182decdb}
+> Scope 2: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+> 
+> Scope 0: {main=ScopeData@76ccd017, Main=ScopeData@182decdb}
+> Scope 1: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+> 
+> selfis being added
+> visiting expression node
+> adding formals
+> visiting expression node
+> Scope 0: {x=ScopeData@33833882}
+> Scope 1: {self=ScopeData@200a570f, A=ScopeData@16b3fc9e, foo=ScopeData@e2d56bf}
+> Scope 2: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+> 
+> Scope 0: {self=ScopeData@200a570f, A=ScopeData@16b3fc9e, foo=ScopeData@e2d56bf}
+> Scope 1: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+> 
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/anattributenamedself.test.out.filtered
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/anattributenamedself.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/anattributenamedself.test.out.filtered
+FAIL: testsuite/semant/anattributenamedself.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignment.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignment.test
++ outname=assignment.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignment.test
++ errname=assignment.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignment.test
++ refrc=0
++ ./mysemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignment.test
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.err
++ '[' 1 -eq 0 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.out /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.out
+0a1,33
+> xis being added
+> visiting expression node
+> yis being added
+> visiting expression node
+> fis being added
+> visiting expression node
+> visiting expression node
+> visiting expression node
+> visiting expression node
+> visiting expression node
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {}
+> Scope 2: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882}
+> Scope 3: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> Scope 0: {}
+> Scope 1: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882}
+> Scope 2: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882, foo=ScopeData@368239c8}
+> Scope 2: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> Scope 0: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882, foo=ScopeData@368239c8}
+> Scope 1: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> xis being added
+> visiting expression node
+> Scope 0: {Foo=ScopeData@9e89d68, x=ScopeData@3b192d32}
+> Scope 1: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+42,43c75,76
+<           : Int
+<         : Int
+---
+>           : _no_type
+>         : _no_type
+50,51c83,84
+<           : Int
+<         : Int
+---
+>           : _no_type
+>         : _no_type
+58,59c91,92
+<           : String
+<         : String
+---
+>           : _no_type
+>         : _no_type
+66,68c99,101
+<           : Foo
+<         : Foo
+<       : Foo
+---
+>           : _no_type
+>         : _no_type
+>       : _no_type
+76c109
+<       : String
+---
+>       : _no_type
+91c124
+<       : Int
+---
+>       : _no_type
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.out.filtered
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.out.filtered
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.out.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.out.filtered
+0a1,27
+> xis being added
+> visiting expression node
+> yis being added
+> visiting expression node
+> fis being added
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {}
+> Scope 2: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882}
+> Scope 3: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> Scope 0: {}
+> Scope 1: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882}
+> Scope 2: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882, foo=ScopeData@368239c8}
+> Scope 2: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> Scope 0: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882, foo=ScopeData@368239c8}
+> Scope 1: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+> 
+> xis being added
+> visiting expression node
+> Scope 0: {Foo=ScopeData@9e89d68, x=ScopeData@3b192d32}
+> Scope 1: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+42,43c69,70
+<           : Int
+<         : Int
+---
+>           : _no_type
+>         : _no_type
+50,51c77,78
+<           : Int
+<         : Int
+---
+>           : _no_type
+>         : _no_type
+58,59c85,86
+<           : String
+<         : String
+---
+>           : _no_type
+>         : _no_type
+66,68c93,95
+<           : Foo
+<         : Foo
+<       : Foo
+---
+>           : _no_type
+>         : _no_type
+>       : _no_type
+76c103
+<       : String
+---
+>       : _no_type
+91c118
+<       : Int
+---
+>       : _no_type
++ outdiffrc=1
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.err /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.err
++ errdiffrc=0
++ '[' 0 -ne 0 ']'
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.out.filtered.bak
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.out.filtered.bak
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.err.filtered.bak
+rm: /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignment.test.err.filtered.bak: No such file or directory
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.err.filtered.bak
+rm: /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignment.test.err.filtered.bak: No such file or directory
++ '[' 0 -eq 0 ']'
++ '[' 0 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 1
+FAIL: testsuite/semant/assignment.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test
++ outname=assignnoconform.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test
++ errname=assignnoconform.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test
++ refrc=1
++ ./mysemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.err
++ '[' 1 -eq 0 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.out
+0a1,67
+> ais being added
+> visiting expression node
+> bis being added
+> visiting expression node
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {main=ScopeData@2401f4c3, Main=ScopeData@7637f22, b=ScopeData@4926097b, a=ScopeData@762efe5d}
+> Scope 2: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> Scope 0: {main=ScopeData@2401f4c3, Main=ScopeData@7637f22, b=ScopeData@4926097b, a=ScopeData@762efe5d}
+> Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> Scope 0: {A=ScopeData@244038d0}
+> Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> Scope 0: {B=ScopeData@5680a178}
+> Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> #1
+> _program
+>   #1
+>   _class
+>     Main
+>     Object
+>     "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+>     (
+>     #2
+>     _attr
+>       a
+>       A
+>       #0
+>       _no_expr
+>       : _no_type
+>     #3
+>     _attr
+>       b
+>       B
+>       #0
+>       _no_expr
+>       : _no_type
+>     #4
+>     _method
+>       main
+>       Object
+>       #4
+>       _assign
+>         b
+>         #4
+>         _new
+>           A
+>         : _no_type
+>       : _no_type
+>     )
+>   #7
+>   _class
+>     A
+>     Object
+>     "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+>     (
+>     )
+>   #8
+>   _class
+>     B
+>     A
+>     "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+>     (
+>     )
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out.filtered
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.out.filtered
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.out.filtered
+0a1,65
+> ais being added
+> visiting expression node
+> bis being added
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {main=ScopeData@2401f4c3, Main=ScopeData@7637f22, b=ScopeData@4926097b, a=ScopeData@762efe5d}
+> Scope 2: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> Scope 0: {main=ScopeData@2401f4c3, Main=ScopeData@7637f22, b=ScopeData@4926097b, a=ScopeData@762efe5d}
+> Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> Scope 0: {A=ScopeData@244038d0}
+> Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> Scope 0: {B=ScopeData@5680a178}
+> Scope 1: {_str_field=ScopeData@5d22bbb7, out_int=ScopeData@41a4555e, IO=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, String=ScopeData@71dac704, abort=ScopeData@123772c4, Main=ScopeData@2d363fb3, Bool=ScopeData@7d6f77cc, Object=ScopeData@5aaa6d82, in_int=ScopeData@73a28541, length=ScopeData@6f75e721, out_string=ScopeData@69222c14, substr=ScopeData@606d8acf, Int=ScopeData@782830e, concat=ScopeData@470e2030, B=ScopeData@3fb4f649, in_string=ScopeData@33833882, A=ScopeData@200a570f, _val=ScopeData@16b3fc9e, copy=ScopeData@e2d56bf}
+> 
+> _program
+> 
+>   _class
+>     Main
+>     Object
+>     "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+>     (
+> 
+>     _attr
+>       a
+>       A
+> 
+>       _no_expr
+>       : _no_type
+> 
+>     _attr
+>       b
+>       B
+> 
+>       _no_expr
+>       : _no_type
+> 
+>     _method
+>       main
+>       Object
+> 
+>       _assign
+>         b
+> 
+>         _new
+>           A
+>         : _no_type
+>       : _no_type
+>     )
+> 
+>   _class
+>     A
+>     Object
+>     "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+>     (
+>     )
+> 
+>   _class
+>     B
+>     A
+>     "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test"
+>     (
+>     )
++ outdiffrc=1
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.err
+1,2d0
+< /Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test:4: Type A of assigned expression does not conform to declared type B of identifier b.
+< Compilation halted due to static semantic errors.
++ errdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err.filtered
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.err
++ sed -i.bak '/Compilation halted due to static semantic errors./!d' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.err.filtered
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.err.filtered
+1d0
+< Compilation halted due to static semantic errors.
++ errdiffrc=1
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.out.filtered.bak
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.out.filtered.bak
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/assignnoconform.test.err.filtered.bak
++ rm /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/assignnoconform.test.err.filtered.bak
++ '[' 1 -eq 0 ']'
++ '[' 1 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ exit 1
+FAIL: testsuite/semant/assignnoconform.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/attrbadinit.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/attrbadinit.test
++ outname=attrbadinit.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/attrbadinit.test
++ errname=attrbadinit.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/attrbadinit.test
++ refrc=1
++ ./mysemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/attrbadinit.test
++ myrc=1
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/attrbadinit.test.err
++ '[' 1 -eq 0 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/attrbadinit.test.out /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/attrbadinit.test.out
+0a1,19
+> visiting expression node
+> Scope 0: {}
+> Scope 1: {Main=ScopeData@cac736f, main=ScopeData@5e265ba4}
+> Scope 2: {_val=ScopeData@156643d4, Object=ScopeData@123a439b, Main=ScopeData@7de26db8, length=ScopeData@1175e2db, out_string=ScopeData@36aa7bc2, Chicken=ScopeData@76ccd017, substr=ScopeData@182decdb, Bool=ScopeData@26f0a63f, Int=ScopeData@4361bd48, String=ScopeData@53bd815b, copy=ScopeData@2401f4c3, Cow=ScopeData@7637f22, abort=ScopeData@4926097b, out_int=ScopeData@762efe5d, in_int=ScopeData@5d22bbb7, concat=ScopeData@41a4555e, _str_field=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, in_string=ScopeData@71dac704, IO=ScopeData@123772c4}
+> 
+> Scope 0: {Main=ScopeData@cac736f, main=ScopeData@5e265ba4}
+> Scope 1: {_val=ScopeData@156643d4, Object=ScopeData@123a439b, Main=ScopeData@7de26db8, length=ScopeData@1175e2db, out_string=ScopeData@36aa7bc2, Chicken=ScopeData@76ccd017, substr=ScopeData@182decdb, Bool=ScopeData@26f0a63f, Int=ScopeData@4361bd48, String=ScopeData@53bd815b, copy=ScopeData@2401f4c3, Cow=ScopeData@7637f22, abort=ScopeData@4926097b, out_int=ScopeData@762efe5d, in_int=ScopeData@5d22bbb7, concat=ScopeData@41a4555e, _str_field=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, in_string=ScopeData@71dac704, IO=ScopeData@123772c4}
+> 
+> moois being added
+> visiting expression node
+> Scope 0: {moo=ScopeData@7d6f77cc, Cow=ScopeData@5aaa6d82}
+> Scope 1: {_val=ScopeData@156643d4, Object=ScopeData@123a439b, Main=ScopeData@7de26db8, length=ScopeData@1175e2db, out_string=ScopeData@36aa7bc2, Chicken=ScopeData@76ccd017, substr=ScopeData@182decdb, Bool=ScopeData@26f0a63f, Int=ScopeData@4361bd48, String=ScopeData@53bd815b, copy=ScopeData@2401f4c3, Cow=ScopeData@7637f22, abort=ScopeData@4926097b, out_int=ScopeData@762efe5d, in_int=ScopeData@5d22bbb7, concat=ScopeData@41a4555e, _str_field=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, in_string=ScopeData@71dac704, IO=ScopeData@123772c4}
+> 
+> soundis being added
+> visiting expression node
+> visiting object node
+> Scope 0: {sound=ScopeData@69222c14, Chicken=ScopeData@606d8acf}
+> Scope 1: {_val=ScopeData@156643d4, Object=ScopeData@123a439b, Main=ScopeData@7de26db8, length=ScopeData@1175e2db, out_string=ScopeData@36aa7bc2, Chicken=ScopeData@76ccd017, substr=ScopeData@182decdb, Bool=ScopeData@26f0a63f, Int=ScopeData@4361bd48, String=ScopeData@53bd815b, copy=ScopeData@2401f4c3, Cow=ScopeData@7637f22, abort=ScopeData@4926097b, out_int=ScopeData@762efe5d, in_int=ScopeData@5d22bbb7, concat=ScopeData@41a4555e, _str_field=ScopeData@3830f1c0, type_name=ScopeData@39ed3c8d, in_string=ScopeData@71dac704, IO=ScopeData@123772c4}
+> 
++ outdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/attrbadinit.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/attrbadinit.test.out.filtered
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/attrbadinit.test.out
++ sed -i.bak -n '$!N; /^\(.*\)\n\1$/!P; D' /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/attrbadinit.test.out.filtered
+FAIL: testsuite/semant/attrbadinit.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/attroverride.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/attroverride.test
++ outname=attroverride.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/attroverride.test
++ errname=attroverride.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/attroverride.test
++ refrc=1
++ ./mysemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/attroverride.test
++ myrc=130
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/attroverride.test.err
++ '[' 1 -eq 0 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/attroverride.test.out /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/attroverride.test.out
++ outdiffrc=0
++ '[' 0 -ne 0 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/attroverride.test.err /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out/attroverride.test.err
+1,2d0
+< /Users/NCC1701-C/cool/LCARS/testsuite/semant/attroverride.test:8: Attribute moo is an attribute of an inherited class.
+< Compilation halted due to static semantic errors.
++ errdiffrc=1
++ '[' 1 -ne 0 ']'
++ sed -f /Users/NCC1701-C/cool/LCARS/bin/filter /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref/attroverride.test.err
+FAIL: testsuite/semant/attroverride.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badargs1.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badargs1.test
++ outname=badargs1.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badargs1.test
++ errname=badargs1.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/badargs1.test
+FAIL: testsuite/semant/badargs1.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badarith.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badarith.test
++ outname=badarith.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badarith.test
++ errname=badarith.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/badarith.test
+FAIL: testsuite/semant/badarith.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/baddispatch.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/baddispatch.test
++ outname=baddispatch.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/baddispatch.test
++ errname=baddispatch.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/baddispatch.test
+FAIL: testsuite/semant/baddispatch.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badequalitytest.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badequalitytest.test
++ outname=badequalitytest.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badequalitytest.test
++ errname=badequalitytest.test.err
+++ which filter
+FAIL: testsuite/semant/badequalitytest.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badequalitytest2.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badequalitytest2.test
++ outname=badequalitytest2.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badequalitytest2.test
++ errname=badequalitytest2.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/badequalitytest2.test
+FAIL: testsuite/semant/badequalitytest2.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badmethodcallsitself.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badmethodcallsitself.test
++ outname=badmethodcallsitself.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badmethodcallsitself.test
++ errname=badmethodcallsitself.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/badmethodcallsitself.test
+FAIL: testsuite/semant/badmethodcallsitself.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badredefineint.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badredefineint.test
++ outname=badredefineint.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badredefineint.test
++ errname=badredefineint.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/badredefineint.test
+FAIL: testsuite/semant/badredefineint.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badstaticdispatch.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badstaticdispatch.test
++ outname=badstaticdispatch.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badstaticdispatch.test
++ errname=badstaticdispatch.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/badstaticdispatch.test
+FAIL: testsuite/semant/badstaticdispatch.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badwhilebody.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badwhilebody.test
++ outname=badwhilebody.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badwhilebody.test
++ errname=badwhilebody.test.err
+++ which filter
+FAIL: testsuite/semant/badwhilebody.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/badwhilecond.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badwhilecond.test
++ outname=badwhilecond.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/badwhilecond.test
++ errname=badwhilecond.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/badwhilecond.test
+FAIL: testsuite/semant/badwhilecond.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/basic.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/basic.test
++ outname=basic.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/basic.test
++ errname=basic.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/basic.test
+FAIL: testsuite/semant/basic.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/basicclassestree.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/basicclassestree.test
++ outname=basicclassestree.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/basicclassestree.test
++ errname=basicclassestree.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/basicclassestree.test
+FAIL: testsuite/semant/basicclassestree.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/caseidenticalbranch.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/caseidenticalbranch.test
++ outname=caseidenticalbranch.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/caseidenticalbranch.test
++ errname=caseidenticalbranch.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/caseidenticalbranch.test
+FAIL: testsuite/semant/caseidenticalbranch.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/cells.cl.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/cells.cl.test
++ outname=cells.cl.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/cells.cl.test
++ errname=cells.cl.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/cells.cl.test
+FAIL: testsuite/semant/cells.cl.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/classes.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/classes.test
++ outname=classes.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/classes.test
++ errname=classes.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/classes.test
+FAIL: testsuite/semant/classes.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/compare.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/compare.test
++ outname=compare.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/compare.test
++ errname=compare.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/compare.test
+FAIL: testsuite/semant/compare.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/comparisons.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/comparisons.test
++ outname=comparisons.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/comparisons.test
++ errname=comparisons.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/comparisons.test
+FAIL: testsuite/semant/comparisons.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/cycleinmethods.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/cycleinmethods.test
++ outname=cycleinmethods.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/cycleinmethods.test
++ errname=cycleinmethods.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/cycleinmethods.test
+FAIL: testsuite/semant/cycleinmethods.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/dispatch.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/dispatch.test
++ outname=dispatch.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/dispatch.test
++ errname=dispatch.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/dispatch.test
+FAIL: testsuite/semant/dispatch.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/dupformals.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/dupformals.test
++ outname=dupformals.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/dupformals.test
++ errname=dupformals.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/dupformals.test
+FAIL: testsuite/semant/dupformals.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/expressionblock.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/expressionblock.test
++ outname=expressionblock.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/expressionblock.test
++ errname=expressionblock.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/expressionblock.test
+FAIL: testsuite/semant/expressionblock.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/forwardinherits.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/forwardinherits.test
++ outname=forwardinherits.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/forwardinherits.test
++ errname=forwardinherits.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/forwardinherits.test
+FAIL: testsuite/semant/forwardinherits.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/hairyscary.cl.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/hairyscary.cl.test
++ outname=hairyscary.cl.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/hairyscary.cl.test
++ errname=hairyscary.cl.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/hairyscary.cl.test
+FAIL: testsuite/semant/hairyscary.cl.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/if.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/if.test
++ outname=if.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/if.test
++ errname=if.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/if.test
+FAIL: testsuite/semant/if.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsObject.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsObject.test
++ outname=inheritsObject.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsObject.test
++ errname=inheritsObject.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsObject.test
+FAIL: testsuite/semant/inheritsObject.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsbool.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsbool.test
++ outname=inheritsbool.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsbool.test
++ errname=inheritsbool.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsbool.test
+FAIL: testsuite/semant/inheritsbool.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsselftype.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsselftype.test
++ outname=inheritsselftype.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsselftype.test
++ errname=inheritsselftype.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsselftype.test
+FAIL: testsuite/semant/inheritsselftype.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsstring.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsstring.test
++ outname=inheritsstring.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsstring.test
++ errname=inheritsstring.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/inheritsstring.test
+FAIL: testsuite/semant/inheritsstring.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/initwithself.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/initwithself.test
++ outname=initwithself.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/initwithself.test
++ errname=initwithself.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/initwithself.test
+FAIL: testsuite/semant/initwithself.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/io.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/io.test
++ outname=io.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/io.test
++ errname=io.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/io.test
+FAIL: testsuite/semant/io.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/isvoid.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/isvoid.test
++ outname=isvoid.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/isvoid.test
++ errname=isvoid.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/isvoid.test
+FAIL: testsuite/semant/isvoid.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/letbadinit.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letbadinit.test
++ outname=letbadinit.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letbadinit.test
++ errname=letbadinit.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/letbadinit.test
+FAIL: testsuite/semant/letbadinit.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/letinit.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letinit.test
++ outname=letinit.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letinit.test
++ errname=letinit.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/letinit.test
+FAIL: testsuite/semant/letinit.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/letnoinit.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letnoinit.test
++ outname=letnoinit.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letnoinit.test
++ errname=letnoinit.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/letnoinit.test
+FAIL: testsuite/semant/letnoinit.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/letself.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letself.test
++ outname=letself.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letself.test
++ errname=letself.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/letself.test
+FAIL: testsuite/semant/letself.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/letselftype.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letselftype.test
++ outname=letselftype.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letselftype.test
++ errname=letselftype.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/letselftype.test
+FAIL: testsuite/semant/letselftype.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/letshadows.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letshadows.test
++ outname=letshadows.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/letshadows.test
++ errname=letshadows.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/letshadows.test
+FAIL: testsuite/semant/letshadows.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/list.cl.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/list.cl.test
++ outname=list.cl.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/list.cl.test
++ errname=list.cl.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/list.cl.test
+FAIL: testsuite/semant/list.cl.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/lubtest.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/lubtest.test
++ outname=lubtest.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/lubtest.test
++ errname=lubtest.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/lubtest.test
+FAIL: testsuite/semant/lubtest.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/methodcallsitself.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/methodcallsitself.test
++ outname=methodcallsitself.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/methodcallsitself.test
++ errname=methodcallsitself.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/methodcallsitself.test
+FAIL: testsuite/semant/methodcallsitself.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/methodnameclash.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/methodnameclash.test
++ outname=methodnameclash.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/methodnameclash.test
++ errname=methodnameclash.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/methodnameclash.test
+FAIL: testsuite/semant/methodnameclash.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/missingclass.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/missingclass.test
++ outname=missingclass.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/missingclass.test
++ errname=missingclass.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/missingclass.test
+FAIL: testsuite/semant/missingclass.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/neg.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/neg.test
++ outname=neg.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/neg.test
++ errname=neg.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/neg.test
+FAIL: testsuite/semant/neg.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/newselftype.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/newselftype.test
++ outname=newselftype.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/newselftype.test
++ errname=newselftype.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/newselftype.test
+FAIL: testsuite/semant/newselftype.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/nomain.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/nomain.test
++ outname=nomain.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/nomain.test
++ errname=nomain.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/nomain.test
+FAIL: testsuite/semant/nomain.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/objectdispatchabort.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/objectdispatchabort.test
++ outname=objectdispatchabort.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/objectdispatchabort.test
++ errname=objectdispatchabort.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/objectdispatchabort.test
+FAIL: testsuite/semant/objectdispatchabort.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/outofscope.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/outofscope.test
++ outname=outofscope.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/outofscope.test
++ errname=outofscope.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/outofscope.test
+FAIL: testsuite/semant/outofscope.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/overriderenamearg.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overriderenamearg.test
++ outname=overriderenamearg.test.out
+FAIL: testsuite/semant/overriderenamearg.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod.test
++ outname=overridingmethod.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod.test
++ errname=overridingmethod.test.err
+FAIL: testsuite/semant/overridingmethod.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod2.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod2.test
++ outname=overridingmethod2.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod2.test
++ errname=overridingmethod2.test.err
+++ which filter
+FAIL: testsuite/semant/overridingmethod2.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod3.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod3.test
++ outname=overridingmethod3.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod3.test
+FAIL: testsuite/semant/overridingmethod3.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod4.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/overridingmethod4.test
++ outname=overridingmethod4.test.out
+FAIL: testsuite/semant/overridingmethod4.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/redefinedclass.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/redefinedclass.test
++ outname=redefinedclass.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/redefinedclass.test
+FAIL: testsuite/semant/redefinedclass.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/redefinedobject.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/redefinedobject.test
++ outname=redefinedobject.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/redefinedobject.test
+FAIL: testsuite/semant/redefinedobject.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/returntypenoexist.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/returntypenoexist.test
++ outname=returntypenoexist.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/returntypenoexist.test
+FAIL: testsuite/semant/returntypenoexist.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/scopes.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/scopes.test
++ outname=scopes.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/scopes.test
++ errname=scopes.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/scopes.test
+FAIL: testsuite/semant/scopes.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/self-assignment.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/self-assignment.test
++ outname=self-assignment.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/self-assignment.test
+FAIL: testsuite/semant/self-assignment.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/selfinformalparameter.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selfinformalparameter.test
++ outname=selfinformalparameter.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selfinformalparameter.test
++ errname=selfinformalparameter.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/selfinformalparameter.test
+FAIL: testsuite/semant/selfinformalparameter.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypebadreturn.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypebadreturn.test
++ outname=selftypebadreturn.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypebadreturn.test
++ errname=selftypebadreturn.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypebadreturn.test
+FAIL: testsuite/semant/selftypebadreturn.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypeparameterposition.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypeparameterposition.test
++ outname=selftypeparameterposition.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypeparameterposition.test
++ errname=selftypeparameterposition.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftypeparameterposition.test
+FAIL: testsuite/semant/selftypeparameterposition.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/selftyperedeclared.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftyperedeclared.test
++ outname=selftyperedeclared.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftyperedeclared.test
++ errname=selftyperedeclared.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/selftyperedeclared.test
+FAIL: testsuite/semant/selftyperedeclared.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/signaturechange.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/signaturechange.test
++ outname=signaturechange.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/signaturechange.test
++ errname=signaturechange.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/signaturechange.test
+FAIL: testsuite/semant/signaturechange.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/simplearith.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/simplearith.test
++ outname=simplearith.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/simplearith.test
++ errname=simplearith.test.err
+++ which filter
+FAIL: testsuite/semant/simplearith.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/simplecase.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/simplecase.test
++ outname=simplecase.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/simplecase.test
++ errname=simplecase.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/simplecase.test
+FAIL: testsuite/semant/simplecase.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/staticdispatch.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/staticdispatch.test
++ outname=staticdispatch.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/staticdispatch.test
++ errname=staticdispatch.test.err
+++ which filter
+FAIL: testsuite/semant/staticdispatch.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/stringtest.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/stringtest.test
++ outname=stringtest.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/stringtest.test
++ errname=stringtest.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/stringtest.test
+FAIL: testsuite/semant/stringtest.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/subtypemethodreturn.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/subtypemethodreturn.test
++ outname=subtypemethodreturn.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/subtypemethodreturn.test
++ errname=subtypemethodreturn.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/subtypemethodreturn.test
+FAIL: testsuite/semant/subtypemethodreturn.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch.test
++ outname=trickyatdispatch.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch.test
++ errname=trickyatdispatch.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch.test
+FAIL: testsuite/semant/trickyatdispatch.test
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch2.test
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=semant
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch2.test
++ outname=trickyatdispatch2.test.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch2.test
++ errname=trickyatdispatch2.test.err
+++ which filter
++ filter='sed -f /Users/NCC1701-C/cool/LCARS/bin/filter'
++ ./refsemant /Users/NCC1701-C/cool/LCARS/testsuite/semant/trickyatdispatch2.test
+FAIL: testsuite/semant/trickyatdispatch2.test

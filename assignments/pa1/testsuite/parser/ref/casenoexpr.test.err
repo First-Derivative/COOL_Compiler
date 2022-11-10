@@ -1,0 +1,4 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/casenoexpr.test", line 7: syntax error at or near OF
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/casenoexpr.test", line 9: syntax error at or near DARROW
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/casenoexpr.test", line 10: syntax error at or near ESAC
+Compilation halted due to lex and parse errors

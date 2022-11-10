@@ -1,0 +1,6 @@
+#1 ERROR "Unterminated string constant"
+#4 ERROR "Unterminated string constant"
+#10 ERROR "Unterminated string constant"
+#12 ERROR "'"
+#12 ERROR "\\"
+#12 ERROR "EOF in string constant"

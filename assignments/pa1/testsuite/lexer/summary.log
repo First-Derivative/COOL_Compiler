@@ -1,0 +1,71 @@
+Testing lexer
+Testsuite in /Users/NCC1701-C/cool/LCARS/testsuite/lexer
+Results in /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer
+Building lexer using /Users/NCC1701-C/cool/LCARS/bin/testscripts/lexer/buildtest
+Testing lexer using /Users/NCC1701-C/cool/LCARS/bin/testscripts/lexer/runtest
+PASS: testsuite/lexer/all_else_true.cool
+PASS: testsuite/lexer/arith.cool
+PASS: testsuite/lexer/atoi.cool
+PASS: testsuite/lexer/backslash.cool
+FAIL: testsuite/lexer/backslash2.cool
+PASS: testsuite/lexer/badidentifiers.cool
+PASS: testsuite/lexer/badkeywords.cool
+PASS: testsuite/lexer/book_list.cl.cool
+PASS: testsuite/lexer/bothcomments.cool
+PASS: testsuite/lexer/comment_in_string.cl.cool
+PASS: testsuite/lexer/endcomment.cool
+PASS: testsuite/lexer/eofstring.cool
+PASS: testsuite/lexer/escaped_chars_in_comment.cl.cool
+PASS: testsuite/lexer/escapedeof.cool
+PASS: testsuite/lexer/escapednull.cool
+PASS: testsuite/lexer/escapedquote.cool
+PASS: testsuite/lexer/escapedunprintables.cool
+PASS: testsuite/lexer/hairyscary.cool
+PASS: testsuite/lexer/integers2.cool
+PASS: testsuite/lexer/invalidcharacters.cool
+PASS: testsuite/lexer/invalidinvisible.cool
+PASS: testsuite/lexer/io.cool
+PASS: testsuite/lexer/keywords.cool
+PASS: testsuite/lexer/life.cool
+PASS: testsuite/lexer/lineno2.cool
+PASS: testsuite/lexer/lineno3.cool
+PASS: testsuite/lexer/longcomment.cool
+FAIL: testsuite/lexer/longstring_escapedbackslashes.cool
+PASS: testsuite/lexer/multilinecomment.cool
+PASS: testsuite/lexer/nestedcomment.cool
+PASS: testsuite/lexer/new_complex.cool
+PASS: testsuite/lexer/null_in_code.cl.cool
+PASS: testsuite/lexer/null_in_string.cl.cool
+PASS: testsuite/lexer/null_in_string_followed_by_tokens.cl.cool
+PASS: testsuite/lexer/null_in_string_unescaped_newline.cl.cool
+PASS: testsuite/lexer/objectid.test.cool
+PASS: testsuite/lexer/opencomment.cool
+PASS: testsuite/lexer/operators.cool
+PASS: testsuite/lexer/palindrome.cool
+PASS: testsuite/lexer/pathologicalstrings.cool
+PASS: testsuite/lexer/s03.test.cool
+PASS: testsuite/lexer/s04.test.cool
+PASS: testsuite/lexer/s05.test.cool
+PASS: testsuite/lexer/s14.test.cool
+PASS: testsuite/lexer/s16.test.cool
+FAIL: testsuite/lexer/s19.test.cool
+PASS: testsuite/lexer/s25.test.cool
+PASS: testsuite/lexer/s26.test.cool
+PASS: testsuite/lexer/s31.test.cool
+PASS: testsuite/lexer/s32.test.cool
+PASS: testsuite/lexer/s33.test.cool
+PASS: testsuite/lexer/s34.test.cool
+PASS: testsuite/lexer/simplestrings.cool
+PASS: testsuite/lexer/sort_list.cl.cool
+PASS: testsuite/lexer/stringcomment.cool
+PASS: testsuite/lexer/stringwithescapes.cool
+PASS: testsuite/lexer/twice_512_nested_comments.cl.cool
+PASS: testsuite/lexer/validcharacters.cool
+PASS: testsuite/lexer/weirdcharcomment.cool
+PASS: testsuite/lexer/wq0607-c1.cool
+PASS: testsuite/lexer/wq0607-c2.cool
+FAIL: testsuite/lexer/wq0607-c3.cool
+FAIL: testsuite/lexer/wq0607-c4.cool
+Passed 58 of 63 tests for lexer
+See /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/test.log
+DONE

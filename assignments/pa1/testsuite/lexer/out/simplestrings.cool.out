@@ -1,0 +1,6 @@
+#1 STRING_CONST this is a string
+#1 STRING_CONST so is this
+#2 STRING_CONST one more string
+#4 STRING_CONST strings can have keywords inside: if else case
+#5 STRING_CONST !@#$%^&*()_+1234567890-=	justanother string   
+#6 EOF <EOF>

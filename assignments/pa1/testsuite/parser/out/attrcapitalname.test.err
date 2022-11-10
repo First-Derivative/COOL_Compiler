@@ -1,0 +1,3 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/attrcapitalname.test", line 3: syntax error at or near TYPEID = Foo
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/attrcapitalname.test", line 4: syntax error at or near OBJECTID = bar
+Compilation halted due to lex and parse errors

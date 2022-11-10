@@ -1,0 +1,3 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/while.test", line 8: syntax error at or near LOOP = loop
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/while.test", line 9: syntax error at or near POOL = pool
+Compilation halted due to lex and parse errors

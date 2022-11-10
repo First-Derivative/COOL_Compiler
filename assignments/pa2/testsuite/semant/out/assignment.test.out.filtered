@@ -1,0 +1,119 @@
+xis being added
+visiting expression node
+yis being added
+visiting expression node
+fis being added
+visiting expression node
+Scope 0: {}
+Scope 1: {}
+Scope 2: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882}
+Scope 3: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+
+Scope 0: {}
+Scope 1: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882}
+Scope 2: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+
+visiting expression node
+Scope 0: {}
+Scope 1: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882, foo=ScopeData@368239c8}
+Scope 2: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+
+Scope 0: {y=ScopeData@606d8acf, f=ScopeData@782830e, Main=ScopeData@470e2030, main=ScopeData@3fb4f649, x=ScopeData@33833882, foo=ScopeData@368239c8}
+Scope 1: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+
+xis being added
+visiting expression node
+Scope 0: {Foo=ScopeData@9e89d68, x=ScopeData@3b192d32}
+Scope 1: {out_int=ScopeData@200a570f, Object=ScopeData@16b3fc9e, _str_field=ScopeData@e2d56bf, Foo=ScopeData@244038d0, Main=ScopeData@5680a178, substr=ScopeData@5fdef03a, Int=ScopeData@3b22cdd0, concat=ScopeData@1e81f4dc, Bool=ScopeData@4d591d15, length=ScopeData@65ae6ba4, out_string=ScopeData@48cf768c, copy=ScopeData@59f95c5d, in_int=ScopeData@5ccd43c2, type_name=ScopeData@4aa8f0b4, String=ScopeData@7960847b, IO=ScopeData@6a6824be, _val=ScopeData@5c8da962, abort=ScopeData@512ddf17, in_string=ScopeData@2c13da15}
+
+_program
+
+  _class
+    Main
+    IO
+    "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignment.test"
+    (
+
+    _attr
+      x
+      Int
+
+      _no_expr
+      : _no_type
+
+    _attr
+      y
+      String
+
+      _no_expr
+      : _no_type
+
+    _attr
+      f
+      Foo
+
+      _no_expr
+      : _no_type
+
+    _method
+      main
+      Object
+
+      _block
+
+        _assign
+          x
+
+          _int
+            3
+          : _no_type
+        : _no_type
+
+        _assign
+          x
+
+          _int
+            5
+          : _no_type
+        : _no_type
+
+        _assign
+          y
+
+          _string
+            "test"
+          : _no_type
+        : _no_type
+
+        _assign
+          f
+
+          _new
+            Foo
+          : _no_type
+        : _no_type
+      : _no_type
+
+    _method
+      foo
+      String
+
+      _string
+        "test"
+      : _no_type
+    )
+
+  _class
+    Foo
+    Object
+    "/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignment.test"
+    (
+
+    _attr
+      x
+      Int
+
+      _int
+        3
+      : _no_type
+    )

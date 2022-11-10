@@ -1,0 +1,2 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/extrasemicolonblock.test", line 3: syntax error at or near SEMICOLON = ;
+Compilation halted due to lex and parse errors

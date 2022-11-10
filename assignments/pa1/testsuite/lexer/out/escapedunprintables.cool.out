@@ -1,0 +1,6 @@
+#1 STRING_CONST This is a tab:	
+#2 STRING_CONST This is a backspace:
+#3 STRING_CONST This is a formfeed:
+#4 STRING_CONST This is a carriage return:
+#5 STRING_CONST This is an escape:
+#6 EOF <EOF>

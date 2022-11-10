@@ -1,0 +1,1 @@
+lexer $@ | parser $@ | java -cp .:/Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar: Analysis $@

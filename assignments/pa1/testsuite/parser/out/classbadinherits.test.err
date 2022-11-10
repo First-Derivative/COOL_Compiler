@@ -1,0 +1,3 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/classbadinherits.test", line 1: syntax error at or near OBJECTID = goodbye
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/classbadinherits.test", line 5: syntax error at or near CURLY_CLOSE = }
+Compilation halted due to lex and parse errors

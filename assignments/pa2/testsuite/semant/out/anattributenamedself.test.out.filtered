@@ -1,0 +1,19 @@
+visiting expression node
+Scope 0: {}
+Scope 1: {main=ScopeData@76ccd017, Main=ScopeData@182decdb}
+Scope 2: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+
+Scope 0: {main=ScopeData@76ccd017, Main=ScopeData@182decdb}
+Scope 1: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+
+selfis being added
+visiting expression node
+adding formals
+visiting expression node
+Scope 0: {x=ScopeData@33833882}
+Scope 1: {self=ScopeData@200a570f, A=ScopeData@16b3fc9e, foo=ScopeData@e2d56bf}
+Scope 2: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+
+Scope 0: {self=ScopeData@200a570f, A=ScopeData@16b3fc9e, foo=ScopeData@e2d56bf}
+Scope 1: {Bool=ScopeData@26f0a63f, abort=ScopeData@4361bd48, in_int=ScopeData@53bd815b, out_int=ScopeData@2401f4c3, out_string=ScopeData@7637f22, concat=ScopeData@4926097b, type_name=ScopeData@762efe5d, _val=ScopeData@5d22bbb7, copy=ScopeData@41a4555e, A=ScopeData@3830f1c0, Int=ScopeData@39ed3c8d, substr=ScopeData@71dac704, in_string=ScopeData@123772c4, Object=ScopeData@2d363fb3, String=ScopeData@7d6f77cc, _str_field=ScopeData@5aaa6d82, Main=ScopeData@73a28541, length=ScopeData@6f75e721, IO=ScopeData@69222c14}
+

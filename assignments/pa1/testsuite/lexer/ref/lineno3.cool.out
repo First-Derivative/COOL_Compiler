@@ -1,0 +1,5 @@
+#name "/Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno3.cool"
+#7 '+'
+#8 OBJECTID abc
+#12 TYPEID DEF
+#13 STR_CONST "string"

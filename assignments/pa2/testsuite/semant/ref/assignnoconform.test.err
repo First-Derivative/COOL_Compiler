@@ -1,0 +1,2 @@
+/Users/NCC1701-C/cool/LCARS/testsuite/semant/assignnoconform.test:4: Type A of assigned expression does not conform to declared type B of identifier b.
+Compilation halted due to static semantic errors.

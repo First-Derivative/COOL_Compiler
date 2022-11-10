@@ -1,0 +1,6 @@
+#1 STRING_CONST string (* 123 *) string
+#2 STRING_CONST string 
+(* 123 *)
+#4 STRING_CONST string (* 
+123 *)
+#7 EOF <EOF>

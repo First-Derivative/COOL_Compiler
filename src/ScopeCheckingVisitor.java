@@ -203,7 +203,7 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
     for(ExpressionNode expr : node.getExprs()) {
       visit(expr, Data);
     }
-    
+
     return Data;
   }
 
@@ -217,6 +217,8 @@ public class ScopeCheckingVisitor extends BaseVisitor<Object, Object> {
 
     return Data;
   }
+
+  
 
 
 }

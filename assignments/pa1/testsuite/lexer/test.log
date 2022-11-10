@@ -1,0 +1,5850 @@
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/all_else_true.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/all_else_true.cool
++ outname=all_else_true.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/all_else_true.cool
++ errname=all_else_true.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/all_else_true.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/all_else_true.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/all_else_true.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/all_else_true.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/all_else_true.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/all_else_true.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/arith.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/arith.cool
++ outname=arith.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/arith.cool
++ errname=arith.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/arith.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/arith.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/arith.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/arith.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/arith.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/arith.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/atoi.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/atoi.cool
++ outname=atoi.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/atoi.cool
++ errname=atoi.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/atoi.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/atoi.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/atoi.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/atoi.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/atoi.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/atoi.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash.cool
++ outname=backslash.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash.cool
++ errname=backslash.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/backslash.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/backslash.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/backslash.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/backslash.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash2.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash2.cool
++ outname=backslash2.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash2.cool
++ errname=backslash2.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash2.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/backslash2.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/backslash2.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/backslash2.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/backslash2.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/backslash2.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/backslash2.cool.out.errortokens
+1,4c1,6
+< #2 ERROR "Unterminated string constant"
+< #3 ERROR "Unterminated string constant"
+< #5 ERROR "Unterminated string constant"
+< #6 ERROR "Unterminated string constant"
+---
+> #1 ERROR "Unterminated string constant"
+> #4 ERROR "Unterminated string constant"
+> #10 ERROR "Unterminated string constant"
+> #12 ERROR "'"
+> #12 ERROR "\\"
+> #12 ERROR "EOF in string constant"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/backslash2.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/backslash2.cool.out.errortokens.filtered
+4c4,6
+<  ERROR "Unterminated string constant"
+---
+>  ERROR "'"
+>  ERROR "\\"
+>  ERROR "EOF in string constant"
+FAIL: testsuite/lexer/backslash2.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/badidentifiers.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badidentifiers.cool
++ outname=badidentifiers.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badidentifiers.cool
++ errname=badidentifiers.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badidentifiers.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badidentifiers.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/badidentifiers.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/badidentifiers.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/badidentifiers.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/badidentifiers.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/badidentifiers.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/badidentifiers.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/badkeywords.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badkeywords.cool
++ outname=badkeywords.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badkeywords.cool
++ errname=badkeywords.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badkeywords.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/badkeywords.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/badkeywords.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/badkeywords.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/badkeywords.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/badkeywords.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/book_list.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/book_list.cl.cool
++ outname=book_list.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/book_list.cl.cool
++ errname=book_list.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/book_list.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/book_list.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/book_list.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/book_list.cl.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/book_list.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/book_list.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/bothcomments.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/bothcomments.cool
++ outname=bothcomments.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/bothcomments.cool
++ errname=bothcomments.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/bothcomments.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/bothcomments.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/bothcomments.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/bothcomments.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/bothcomments.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/bothcomments.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/bothcomments.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/bothcomments.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/comment_in_string.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/comment_in_string.cl.cool
++ outname=comment_in_string.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/comment_in_string.cl.cool
++ errname=comment_in_string.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/comment_in_string.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/comment_in_string.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/comment_in_string.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/comment_in_string.cl.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/comment_in_string.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/comment_in_string.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/endcomment.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/endcomment.cool
++ outname=endcomment.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/endcomment.cool
++ errname=endcomment.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/endcomment.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/endcomment.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/endcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/endcomment.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/endcomment.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/endcomment.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/endcomment.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/endcomment.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/eofstring.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/eofstring.cool
++ outname=eofstring.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/eofstring.cool
++ errname=eofstring.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/eofstring.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/eofstring.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/eofstring.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/eofstring.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/eofstring.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/eofstring.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/eofstring.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/eofstring.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/escaped_chars_in_comment.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escaped_chars_in_comment.cl.cool
++ outname=escaped_chars_in_comment.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escaped_chars_in_comment.cl.cool
++ errname=escaped_chars_in_comment.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escaped_chars_in_comment.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escaped_chars_in_comment.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escaped_chars_in_comment.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escaped_chars_in_comment.cl.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escaped_chars_in_comment.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/escaped_chars_in_comment.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedeof.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedeof.cool
++ outname=escapedeof.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedeof.cool
++ errname=escapedeof.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedeof.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedeof.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedeof.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapedeof.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedeof.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapedeof.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedeof.cool.out.errortokens
+1c1
+< #2 ERROR "EOF in string constant"
+---
+> #1 ERROR "EOF in string constant"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapedeof.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedeof.cool.out.errortokens.filtered
+PASS: testsuite/lexer/escapedeof.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapednull.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapednull.cool
++ outname=escapednull.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapednull.cool
++ errname=escapednull.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapednull.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapednull.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapednull.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapednull.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapednull.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapednull.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapednull.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/escapednull.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedquote.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedquote.cool
++ outname=escapedquote.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedquote.cool
++ errname=escapedquote.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedquote.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedquote.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedquote.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapedquote.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedquote.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapedquote.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedquote.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/escapedquote.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedunprintables.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedunprintables.cool
++ outname=escapedunprintables.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedunprintables.cool
++ errname=escapedunprintables.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedunprintables.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/escapedunprintables.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedunprintables.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/escapedunprintables.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/escapedunprintables.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/escapedunprintables.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/hairyscary.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/hairyscary.cool
++ outname=hairyscary.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/hairyscary.cool
++ errname=hairyscary.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/hairyscary.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/hairyscary.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/hairyscary.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/hairyscary.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/hairyscary.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/hairyscary.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/integers2.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/integers2.cool
++ outname=integers2.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/integers2.cool
++ errname=integers2.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/integers2.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/integers2.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/integers2.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/integers2.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/integers2.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/integers2.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidcharacters.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidcharacters.cool
++ outname=invalidcharacters.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidcharacters.cool
++ errname=invalidcharacters.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidcharacters.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidcharacters.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/invalidcharacters.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/invalidcharacters.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/invalidcharacters.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/invalidcharacters.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/invalidcharacters.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/invalidcharacters.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidinvisible.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidinvisible.cool
++ outname=invalidinvisible.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidinvisible.cool
++ errname=invalidinvisible.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidinvisible.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/invalidinvisible.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/invalidinvisible.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/invalidinvisible.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/invalidinvisible.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/invalidinvisible.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/invalidinvisible.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/invalidinvisible.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/io.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/io.cool
++ outname=io.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/io.cool
++ errname=io.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/io.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/io.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/io.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/io.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/io.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/io.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/keywords.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/keywords.cool
++ outname=keywords.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/keywords.cool
++ errname=keywords.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/keywords.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/keywords.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/keywords.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/keywords.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/keywords.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/keywords.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/life.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/life.cool
++ outname=life.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/life.cool
++ errname=life.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/life.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/life.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/life.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/life.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/life.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/life.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno2.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno2.cool
++ outname=lineno2.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno2.cool
++ errname=lineno2.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno2.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno2.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/lineno2.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/lineno2.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/lineno2.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/lineno2.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/lineno2.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/lineno2.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno3.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno3.cool
++ outname=lineno3.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno3.cool
++ errname=lineno3.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno3.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/lineno3.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/lineno3.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/lineno3.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/lineno3.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/lineno3.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/longcomment.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longcomment.cool
++ outname=longcomment.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longcomment.cool
++ errname=longcomment.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longcomment.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longcomment.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/longcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/longcomment.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/longcomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/longcomment.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/longstring_escapedbackslashes.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longstring_escapedbackslashes.cool
++ outname=longstring_escapedbackslashes.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longstring_escapedbackslashes.cool
++ errname=longstring_escapedbackslashes.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longstring_escapedbackslashes.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/longstring_escapedbackslashes.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/longstring_escapedbackslashes.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/longstring_escapedbackslashes.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/longstring_escapedbackslashes.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/longstring_escapedbackslashes.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/longstring_escapedbackslashes.cool.out.errortokens
+1c1,2037
+< #32 ERROR "String constant too long"
+---
+> #1 ERROR "Unterminated string constant"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #17 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #18 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #19 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #20 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #21 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #22 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #23 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #24 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #25 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #26 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #27 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #28 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #29 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #30 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #31 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "\\"
+> #32 ERROR "Unterminated string constant"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/longstring_escapedbackslashes.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/longstring_escapedbackslashes.cool.out.errortokens.filtered
+1c1,2037
+<  ERROR "String constant too long"
+---
+>  ERROR "Unterminated string constant"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "\\"
+>  ERROR "Unterminated string constant"
+FAIL: testsuite/lexer/longstring_escapedbackslashes.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/multilinecomment.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/multilinecomment.cool
++ outname=multilinecomment.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/multilinecomment.cool
++ errname=multilinecomment.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/multilinecomment.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/multilinecomment.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/multilinecomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/multilinecomment.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/multilinecomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/multilinecomment.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/nestedcomment.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/nestedcomment.cool
++ outname=nestedcomment.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/nestedcomment.cool
++ errname=nestedcomment.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/nestedcomment.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/nestedcomment.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/nestedcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/nestedcomment.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/nestedcomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/nestedcomment.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/new_complex.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/new_complex.cool
++ outname=new_complex.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/new_complex.cool
++ errname=new_complex.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/new_complex.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/new_complex.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/new_complex.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/new_complex.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/new_complex.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/new_complex.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_code.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_code.cl.cool
++ outname=null_in_code.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_code.cl.cool
++ errname=null_in_code.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_code.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_code.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_code.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_code.cl.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_code.cl.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_code.cl.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_code.cl.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/null_in_code.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string.cl.cool
++ outname=null_in_string.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string.cl.cool
++ errname=null_in_string.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_string.cl.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string.cl.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_string.cl.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string.cl.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/null_in_string.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_followed_by_tokens.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_followed_by_tokens.cl.cool
++ outname=null_in_string_followed_by_tokens.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_followed_by_tokens.cl.cool
++ errname=null_in_string_followed_by_tokens.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_followed_by_tokens.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_followed_by_tokens.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string_followed_by_tokens.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_string_followed_by_tokens.cl.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string_followed_by_tokens.cl.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_string_followed_by_tokens.cl.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string_followed_by_tokens.cl.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/null_in_string_followed_by_tokens.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ outname=null_in_string_unescaped_newline.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ errname=null_in_string_unescaped_newline.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string_unescaped_newline.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_string_unescaped_newline.cl.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string_unescaped_newline.cl.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/null_in_string_unescaped_newline.cl.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/null_in_string_unescaped_newline.cl.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/null_in_string_unescaped_newline.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/objectid.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/objectid.test.cool
++ outname=objectid.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/objectid.test.cool
++ errname=objectid.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/objectid.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/objectid.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/objectid.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/objectid.test.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/objectid.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/objectid.test.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/objectid.test.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/objectid.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/opencomment.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/opencomment.cool
++ outname=opencomment.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/opencomment.cool
++ errname=opencomment.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/opencomment.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/opencomment.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/opencomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/opencomment.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/opencomment.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/opencomment.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/opencomment.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/opencomment.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/operators.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/operators.cool
++ outname=operators.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/operators.cool
++ errname=operators.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/operators.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/operators.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/operators.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/operators.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/operators.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/operators.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/palindrome.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/palindrome.cool
++ outname=palindrome.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/palindrome.cool
++ errname=palindrome.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/palindrome.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/palindrome.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/palindrome.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/palindrome.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/palindrome.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/palindrome.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/pathologicalstrings.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/pathologicalstrings.cool
++ outname=pathologicalstrings.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/pathologicalstrings.cool
++ errname=pathologicalstrings.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/pathologicalstrings.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/pathologicalstrings.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/pathologicalstrings.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/pathologicalstrings.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.out.errortokens
+1,3c1,3
+< #15 ERROR "String constant too long"
+< #41 ERROR "String constant too long"
+< #69 ERROR "String constant too long"
+---
+> #5 ERROR "String constant too long"
+> #31 ERROR "String constant too long"
+> #58 ERROR "String constant too long"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/pathologicalstrings.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/pathologicalstrings.cool.out.errortokens.filtered
+PASS: testsuite/lexer/pathologicalstrings.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s03.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s03.test.cool
++ outname=s03.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s03.test.cool
++ errname=s03.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s03.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s03.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s03.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s03.test.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s03.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s03.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s04.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s04.test.cool
++ outname=s04.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s04.test.cool
++ errname=s04.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s04.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s04.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s04.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s04.test.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s04.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s04.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s05.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s05.test.cool
++ outname=s05.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s05.test.cool
++ errname=s05.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s05.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s05.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s05.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s05.test.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s05.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s05.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s14.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s14.test.cool
++ outname=s14.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s14.test.cool
++ errname=s14.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s14.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s14.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s14.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s14.test.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s14.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s14.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s16.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s16.test.cool
++ outname=s16.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s16.test.cool
++ errname=s16.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s16.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s16.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s16.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s16.test.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s16.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s16.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s19.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s19.test.cool
++ outname=s19.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s19.test.cool
++ errname=s19.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s19.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s19.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s19.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s19.test.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s19.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s19.test.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s19.test.cool.out.errortokens
+1,2c1
+< #3 ERROR "Unterminated string constant"
+< #4 ERROR "Unterminated string constant"
+---
+> #2 ERROR "Unterminated string constant"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s19.test.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s19.test.cool.out.errortokens.filtered
+2d1
+<  ERROR "Unterminated string constant"
+FAIL: testsuite/lexer/s19.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s25.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s25.test.cool
++ outname=s25.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s25.test.cool
++ errname=s25.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s25.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s25.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s25.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s25.test.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s25.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s25.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s26.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s26.test.cool
++ outname=s26.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s26.test.cool
++ errname=s26.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s26.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s26.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s26.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s26.test.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s26.test.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/s26.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s31.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s31.test.cool
++ outname=s31.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s31.test.cool
++ errname=s31.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s31.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s31.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s31.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s31.test.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s31.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s31.test.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s31.test.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/s31.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s32.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s32.test.cool
++ outname=s32.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s32.test.cool
++ errname=s32.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s32.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s32.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s32.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s32.test.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s32.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s32.test.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s32.test.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/s32.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s33.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s33.test.cool
++ outname=s33.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s33.test.cool
++ errname=s33.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s33.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s33.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s33.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s33.test.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s33.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s33.test.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s33.test.cool.out.errortokens
+1c1
+< #8 ERROR "EOF in comment"
+---
+> #7 ERROR "EOF in comment"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s33.test.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s33.test.cool.out.errortokens.filtered
+PASS: testsuite/lexer/s33.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/s34.test.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s34.test.cool
++ outname=s34.test.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s34.test.cool
++ errname=s34.test.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s34.test.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/s34.test.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s34.test.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s34.test.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s34.test.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s34.test.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s34.test.cool.out.errortokens
+1c1
+< #5 ERROR "Unterminated string constant"
+---
+> #3 ERROR "Unterminated string constant"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/s34.test.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/s34.test.cool.out.errortokens.filtered
+PASS: testsuite/lexer/s34.test.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/simplestrings.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/simplestrings.cool
++ outname=simplestrings.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/simplestrings.cool
++ errname=simplestrings.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/simplestrings.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/simplestrings.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/simplestrings.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/simplestrings.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/simplestrings.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/simplestrings.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/sort_list.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/sort_list.cl.cool
++ outname=sort_list.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/sort_list.cl.cool
++ errname=sort_list.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/sort_list.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/sort_list.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/sort_list.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/sort_list.cl.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/sort_list.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/sort_list.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringcomment.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringcomment.cool
++ outname=stringcomment.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringcomment.cool
++ errname=stringcomment.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringcomment.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringcomment.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/stringcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/stringcomment.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/stringcomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/stringcomment.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringwithescapes.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringwithescapes.cool
++ outname=stringwithescapes.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringwithescapes.cool
++ errname=stringwithescapes.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringwithescapes.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/stringwithescapes.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/stringwithescapes.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/stringwithescapes.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/stringwithescapes.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/stringwithescapes.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/twice_512_nested_comments.cl.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/twice_512_nested_comments.cl.cool
++ outname=twice_512_nested_comments.cl.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/twice_512_nested_comments.cl.cool
++ errname=twice_512_nested_comments.cl.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/twice_512_nested_comments.cl.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/twice_512_nested_comments.cl.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/twice_512_nested_comments.cl.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/twice_512_nested_comments.cl.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/twice_512_nested_comments.cl.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/twice_512_nested_comments.cl.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/validcharacters.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/validcharacters.cool
++ outname=validcharacters.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/validcharacters.cool
++ errname=validcharacters.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/validcharacters.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/validcharacters.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/validcharacters.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/validcharacters.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/validcharacters.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/validcharacters.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/weirdcharcomment.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/weirdcharcomment.cool
++ outname=weirdcharcomment.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/weirdcharcomment.cool
++ errname=weirdcharcomment.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/weirdcharcomment.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/weirdcharcomment.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/weirdcharcomment.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/weirdcharcomment.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/weirdcharcomment.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/weirdcharcomment.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c1.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c1.cool
++ outname=wq0607-c1.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c1.cool
++ errname=wq0607-c1.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c1.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c1.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c1.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c1.cool.out
++ refrc=1
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c1.cool.out
++ myrc=1
++ '[' 1 -ne 1 ']'
++ '[' 1 -eq 1 ']'
++ exit 0
+PASS: testsuite/lexer/wq0607-c1.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c2.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c2.cool
++ outname=wq0607-c2.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c2.cool
++ errname=wq0607-c2.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c2.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c2.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c2.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c2.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c2.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c2.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c2.cool.out.errortokens
++ '[' 0 -eq 0 ']'
++ exit 0
+PASS: testsuite/lexer/wq0607-c2.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c3.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c3.cool
++ outname=wq0607-c3.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c3.cool
++ errname=wq0607-c3.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c3.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c3.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c3.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c3.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.out.errortokens
+6,7c6
+< #3 ERROR "\\"
+< #4 ERROR "Unterminated string constant"
+---
+> #3 ERROR "Unterminated string constant"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c3.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c3.cool.out.errortokens.filtered
+6d5
+<  ERROR "\\"
+FAIL: testsuite/lexer/wq0607-c3.cool
++ testfile=/Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c4.cool
++ results_outdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out
++ results_refdir=/Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ REF_DIR=/Users/NCC1701-C/cool/LCARS/../ref
++ component=lexer
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c4.cool
++ outname=wq0607-c4.cool.out
+++ basename /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c4.cool
++ errname=wq0607-c4.cool.err
++ lexer /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c4.cool
++ refrc=0
++ ./myfrontend -x /Users/NCC1701-C/cool/LCARS/testsuite/lexer/wq0607-c4.cool
++ myrc=0
++ grep exception /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.err
++ '[' 1 -eq 0 ']'
++ '[' 0 -ne 0 ']'
++ '[' 0 -ne 0 ']'
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c4.cool.out
++ refrc=0
++ grep ERROR /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.out
++ myrc=0
++ '[' 0 -ne 0 ']'
++ '[' 0 -eq 1 ']'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c4.cool.out.errortokens /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.out.errortokens
+4a5
+> #4 ERROR "Unterminated string constant"
+11d11
+< #6 ERROR "Unterminated string constant"
++ '[' 1 -eq 0 ']'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ sed 's/^[\t ]*#[0-9][0-9]*//'
++ diff /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/ref/wq0607-c4.cool.out.errortokens.filtered /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/lexer/out/wq0607-c4.cool.out.errortokens.filtered
+4a5
+>  ERROR "Unterminated string constant"
+11d11
+<  ERROR "Unterminated string constant"
+FAIL: testsuite/lexer/wq0607-c4.cool

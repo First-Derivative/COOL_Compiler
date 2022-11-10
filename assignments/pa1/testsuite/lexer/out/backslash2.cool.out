@@ -1,0 +1,20 @@
+#1 ERROR "Unterminated string constant"
+#4 ERROR "Unterminated string constant"
+#7 STRING_CONST This is, though \
+
+#10 ERROR "Unterminated string constant"
+#12 TYPEID It
+#12 ERROR "'"
+#12 OBJECTID s
+#12 OBJECTID fine
+#12 OBJECTID to
+#12 OBJECTID have
+#12 OBJECTID this
+#12 COLON :
+#12 ERROR "\\"
+#12 OBJECTID n
+#12 IN in
+#12 OBJECTID a
+#12 OBJECTID string
+#12 ERROR "EOF in string constant"
+#13 EOF <EOF>

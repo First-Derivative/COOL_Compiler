@@ -1,0 +1,3 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/firstclasserrored.test", line 1: syntax error at or near OBJECTID = asdfjkasldfjdklaf
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/firstclasserrored.test", line 3: syntax error at or near TYPEID = B
+Compilation halted due to lex and parse errors

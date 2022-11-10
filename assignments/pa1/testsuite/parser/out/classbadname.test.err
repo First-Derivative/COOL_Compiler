@@ -1,0 +1,4 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/classbadname.test", line 1: syntax error at or near OBJECTID = test
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/classbadname.test", line 3: syntax error at or near OBJECTID = bar
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/classbadname.test", line 6: syntax error at or near OBJECTID = recover
+Compilation halted due to lex and parse errors

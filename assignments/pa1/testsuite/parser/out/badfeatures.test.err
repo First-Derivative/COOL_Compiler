@@ -1,0 +1,5 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badfeatures.test", line 2: syntax error at or near OBJECTID = int
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badfeatures.test", line 4: syntax error at or near SEMICOLON = ;
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badfeatures.test", line 7: syntax error at or near CURLY_CLOSE = }
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badfeatures.test", line 8: syntax error at or near EOF = <EOF>
+Compilation halted due to lex and parse errors

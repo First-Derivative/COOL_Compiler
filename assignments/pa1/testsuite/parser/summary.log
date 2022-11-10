@@ -1,0 +1,80 @@
+Testing parser
+Testsuite in /Users/NCC1701-C/cool/LCARS/testsuite/parser
+Results in /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/parser
+Results directory exists and will be overwritten.
+Building parser using /Users/NCC1701-C/cool/LCARS/bin/testscripts/parser/buildtest
+Testing parser using /Users/NCC1701-C/cool/LCARS/bin/testscripts/parser/runtest
+PASS: testsuite/parser/addedlet.test
+FAIL: testsuite/parser/arithprecedence.test
+PASS: testsuite/parser/assigngetstype.test
+PASS: testsuite/parser/assignment.test
+PASS: testsuite/parser/assignseq.test
+PASS: testsuite/parser/associativity+.test
+PASS: testsuite/parser/associativity-.test
+PASS: testsuite/parser/associativity-times.test
+PASS: testsuite/parser/associativitydiv.test
+FAIL: testsuite/parser/atoi.test
+PASS: testsuite/parser/attrcapitalname.test
+PASS: testsuite/parser/badblock.test
+PASS: testsuite/parser/baddispatch1.test
+PASS: testsuite/parser/baddispatch2.test
+PASS: testsuite/parser/baddispatch3.test
+PASS: testsuite/parser/baddispatch4.test
+PASS: testsuite/parser/badexprlist.test
+PASS: testsuite/parser/badfeaturenames.test
+PASS: testsuite/parser/badfeatures.test
+PASS: testsuite/parser/casemultiplebranch.test
+PASS: testsuite/parser/casenoexpr.test
+PASS: testsuite/parser/classbadinherits.test
+PASS: testsuite/parser/classbadname.test
+PASS: testsuite/parser/classmethodonearg.test
+PASS: testsuite/parser/classnoname.test
+PASS: testsuite/parser/classonefield.test
+PASS: testsuite/parser/classtwofields.test
+PASS: testsuite/parser/compare_expr.cl
+PASS: testsuite/parser/comparisons-assoc.test
+PASS: testsuite/parser/complex.test
+PASS: testsuite/parser/dispatcharglist.test
+PASS: testsuite/parser/dispatchnoargs.test
+PASS: testsuite/parser/dispatchonearg.test
+PASS: testsuite/parser/emptyassign.test
+PASS: testsuite/parser/emptymethodbody.test
+PASS: testsuite/parser/emptyprogram.test
+PASS: testsuite/parser/emptystaticdispatch.test
+PASS: testsuite/parser/equalsassociativity.test
+PASS: testsuite/parser/extrasemicolonblock.test
+PASS: testsuite/parser/firstbindingerrored.test
+PASS: testsuite/parser/firstclasserrored.test
+PASS: testsuite/parser/formallists.test
+PASS: testsuite/parser/ifexpressionblock.test
+PASS: testsuite/parser/ifnested.test
+PASS: testsuite/parser/ifnoelse.test
+PASS: testsuite/parser/ifnoelsebranch.test
+PASS: testsuite/parser/ifnofi.test
+PASS: testsuite/parser/ifnothenbranch.test
+PASS: testsuite/parser/isvoidbadtype.test
+PASS: testsuite/parser/letassociativity.test
+PASS: testsuite/parser/letinit.test
+PASS: testsuite/parser/letinitmultiplebindings.test
+PASS: testsuite/parser/letnoinit.test
+PASS: testsuite/parser/letparens.test
+PASS: testsuite/parser/lteassociativity.test
+PASS: testsuite/parser/multipleatdispatches.test
+PASS: testsuite/parser/multipleattributes.test
+PASS: testsuite/parser/multipleclasses.test
+PASS: testsuite/parser/multipledispatches.test
+PASS: testsuite/parser/multiplemethoderrors.test
+PASS: testsuite/parser/nestedblocks.test
+PASS: testsuite/parser/nestedlet.test
+PASS: testsuite/parser/newbadtype.test
+PASS: testsuite/parser/returntypebad.test
+PASS: testsuite/parser/secondbindingerrored.test
+PASS: testsuite/parser/staticdispatchnoargs.test
+PASS: testsuite/parser/unaryassociativity.test
+PASS: testsuite/parser/while.test
+PASS: testsuite/parser/whileexpressionblock.test
+PASS: testsuite/parser/whilenoloop.test
+PASS: testsuite/parser/whileoneexpression.test
+Passed 69 of 71 tests for parser
+See /Users/NCC1701-C/cool/LCARS/assignments/pa1/testsuite/parser/test.log
+DONE

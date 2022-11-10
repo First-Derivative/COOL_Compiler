@@ -1,0 +1,82 @@
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ SRC_DIR=/Users/NCC1701-C/cool/LCARS/src
++ component=semant
++ cd /Users/NCC1701-C/cool/LCARS/assignments/pa2
++ buildme semant
++ set -e
++ set -o pipefail
++ component=all
++ '[' 1 -ge 1 ']'
++ '[' semant = lexer ']'
++ '[' semant = parser ']'
++ '[' semant = frontend ']'
++ '[' semant = semant ']'
++ component=semant
+++ dirname /Users/NCC1701-C/cool/LCARS/bin/buildme
++ COOL_DIR=/Users/NCC1701-C/cool/LCARS/bin/..
+++ cd /Users/NCC1701-C/cool/LCARS/bin/..
+++ pwd
++ COOL_DIR=/Users/NCC1701-C/cool/LCARS
+++ pwd
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa2
++ SRC_DIR=/Users/NCC1701-C/cool/LCARS/src
++ ANTLR_JAR=/Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar
++ CLASSPATH=/Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar:
++ JAVA_SRC_FILE_LIST='/Users/NCC1701-C/cool/LCARS/src/ast/*.java     /Users/NCC1701-C/cool/LCARS/src/ast/visitor/*.java     /Users/NCC1701-C/cool/LCARS/src/Flags.java     /Users/NCC1701-C/cool/LCARS/src/Utilities.java     /Users/NCC1701-C/cool/LCARS/src/StringTable.java     /Users/NCC1701-C/cool/LCARS/src/TreeConstants.java     /Users/NCC1701-C/cool/LCARS/src/ASTBuilder.java     /Users/NCC1701-C/cool/LCARS/src/CoolErrorListener.java     /Users/NCC1701-C/cool/LCARS/src/CoolErrorStrategy.java     /Users/NCC1701-C/cool/LCARS/src/Frontend.java'
++ '[' semant '!=' frontend ']'
++ JAVA_SRC_FILE_LIST='/Users/NCC1701-C/cool/LCARS/src/ast/*.java     /Users/NCC1701-C/cool/LCARS/src/ast/visitor/*.java     /Users/NCC1701-C/cool/LCARS/src/Flags.java     /Users/NCC1701-C/cool/LCARS/src/Utilities.java     /Users/NCC1701-C/cool/LCARS/src/StringTable.java     /Users/NCC1701-C/cool/LCARS/src/TreeConstants.java     /Users/NCC1701-C/cool/LCARS/src/ASTBuilder.java     /Users/NCC1701-C/cool/LCARS/src/CoolErrorListener.java     /Users/NCC1701-C/cool/LCARS/src/CoolErrorStrategy.java     /Users/NCC1701-C/cool/LCARS/src/Frontend.java         /Users/NCC1701-C/cool/LCARS/src/SymbolTable.java         /Users/NCC1701-C/cool/LCARS/src/ClassTable.java         /Users/NCC1701-C/cool/LCARS/src/ASTRebuilder.java         /Users/NCC1701-C/cool/LCARS/src/TypeCheckingVisitor.java         /Users/NCC1701-C/cool/LCARS/src/ScopeCheckingVisitor.java         /Users/NCC1701-C/cool/LCARS/src/Semant.java         /Users/NCC1701-C/cool/LCARS/src/Analysis.java'
++ '[' semant '!=' frontend ']'
++ '[' semant '!=' semant ']'
++ ANTLR='java -jar /Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar'
++ java -jar /Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar -o /Users/NCC1701-C/cool/LCARS/assignments/pa2 -listener -visitor -lib /Users/NCC1701-C/cool/LCARS/src /Users/NCC1701-C/cool/LCARS/src/CoolParser.g4 /Users/NCC1701-C/cool/LCARS/src/CoolLexer.g4
++ '[' semant '!=' frontend ']'
++ java -jar /Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar -o /Users/NCC1701-C/cool/LCARS/assignments/pa2 -visitor -package ast.parser -lib /Users/NCC1701-C/cool/LCARS/src/ast/parser /Users/NCC1701-C/cool/LCARS/src/ast/parser/ASTParser.g4 /Users/NCC1701-C/cool/LCARS/src/ast/parser/ASTLexer.g4
++ tee build.log
++ javac -cp /Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar: -d /Users/NCC1701-C/cool/LCARS/assignments/pa2/ /Users/NCC1701-C/cool/LCARS/src/ast/AssignNode.java /Users/NCC1701-C/cool/LCARS/src/ast/AttributeNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BinopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BlockNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BoolBinopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BoolConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BoolUnopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BranchNode.java /Users/NCC1701-C/cool/LCARS/src/ast/CaseNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ClassNode.java /Users/NCC1701-C/cool/LCARS/src/ast/CompNode.java /Users/NCC1701-C/cool/LCARS/src/ast/CondNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/DispatchNode.java /Users/NCC1701-C/cool/LCARS/src/ast/DivideNode.java /Users/NCC1701-C/cool/LCARS/src/ast/EqNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ExpressionNode.java /Users/NCC1701-C/cool/LCARS/src/ast/FeatureNode.java /Users/NCC1701-C/cool/LCARS/src/ast/FormalNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IntBinopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IntConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IntUnopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IsVoidNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LEqNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LTNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LetNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LoopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/MethodNode.java /Users/NCC1701-C/cool/LCARS/src/ast/MulNode.java /Users/NCC1701-C/cool/LCARS/src/ast/NegNode.java /Users/NCC1701-C/cool/LCARS/src/ast/NewNode.java /Users/NCC1701-C/cool/LCARS/src/ast/NoExpressionNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ObjectNode.java /Users/NCC1701-C/cool/LCARS/src/ast/PlusNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ProgramNode.java /Users/NCC1701-C/cool/LCARS/src/ast/StaticDispatchNode.java /Users/NCC1701-C/cool/LCARS/src/ast/StringConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/SubNode.java /Users/NCC1701-C/cool/LCARS/src/ast/Symbol.java /Users/NCC1701-C/cool/LCARS/src/ast/Tree.java /Users/NCC1701-C/cool/LCARS/src/ast/TreeNode.java /Users/NCC1701-C/cool/LCARS/src/ast/UnopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/visitor/BaseVisitor.java /Users/NCC1701-C/cool/LCARS/src/ast/visitor/DumpVisitor.java /Users/NCC1701-C/cool/LCARS/src/ast/visitor/TreeVisitor.java /Users/NCC1701-C/cool/LCARS/src/Flags.java /Users/NCC1701-C/cool/LCARS/src/Utilities.java /Users/NCC1701-C/cool/LCARS/src/StringTable.java /Users/NCC1701-C/cool/LCARS/src/TreeConstants.java /Users/NCC1701-C/cool/LCARS/src/ASTBuilder.java /Users/NCC1701-C/cool/LCARS/src/CoolErrorListener.java /Users/NCC1701-C/cool/LCARS/src/CoolErrorStrategy.java /Users/NCC1701-C/cool/LCARS/src/Frontend.java /Users/NCC1701-C/cool/LCARS/src/SymbolTable.java /Users/NCC1701-C/cool/LCARS/src/ClassTable.java /Users/NCC1701-C/cool/LCARS/src/ASTRebuilder.java /Users/NCC1701-C/cool/LCARS/src/TypeCheckingVisitor.java /Users/NCC1701-C/cool/LCARS/src/ScopeCheckingVisitor.java /Users/NCC1701-C/cool/LCARS/src/Semant.java /Users/NCC1701-C/cool/LCARS/src/Analysis.java ASTLexer.java ASTParser.java ASTParserBaseListener.java ASTParserBaseVisitor.java ASTParserListener.java ASTParserVisitor.java CoolLexer.java CoolParser.java CoolParserBaseListener.java CoolParserBaseVisitor.java CoolParserListener.java CoolParserVisitor.java
++ '[' semant = frontend ']'
++ '[' semant = semant ']'
++ echo 'lexer $@ | parser $@ | java -cp .:/Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar: Analysis $@'
++ chmod +x mysemant
++ echo 'lexer $@ | parser $@ | semant'
++ chmod +x refsemant
++ ./mysemant /Users/NCC1701-C/cool/LCARS/examples/hello_world.cl
+visiting expression node
+Scope 0: {}
+Scope 1: {main=ScopeData@4926097b, Main=ScopeData@762efe5d}
+Scope 2: {Int=ScopeData@5d22bbb7, Object=ScopeData@41a4555e, substr=ScopeData@3830f1c0, Main=ScopeData@39ed3c8d, concat=ScopeData@71dac704, String=ScopeData@123772c4, in_int=ScopeData@2d363fb3, type_name=ScopeData@7d6f77cc, in_string=ScopeData@5aaa6d82, _val=ScopeData@73a28541, copy=ScopeData@6f75e721, out_int=ScopeData@69222c14, _str_field=ScopeData@606d8acf, Bool=ScopeData@782830e, out_string=ScopeData@470e2030, abort=ScopeData@3fb4f649, IO=ScopeData@33833882, length=ScopeData@200a570f}
+
+Scope 0: {main=ScopeData@4926097b, Main=ScopeData@762efe5d}
+Scope 1: {Int=ScopeData@5d22bbb7, Object=ScopeData@41a4555e, substr=ScopeData@3830f1c0, Main=ScopeData@39ed3c8d, concat=ScopeData@71dac704, String=ScopeData@123772c4, in_int=ScopeData@2d363fb3, type_name=ScopeData@7d6f77cc, in_string=ScopeData@5aaa6d82, _val=ScopeData@73a28541, copy=ScopeData@6f75e721, out_int=ScopeData@69222c14, _str_field=ScopeData@606d8acf, Bool=ScopeData@782830e, out_string=ScopeData@470e2030, abort=ScopeData@3fb4f649, IO=ScopeData@33833882, length=ScopeData@200a570f}
+
+#1
+_program
+  #1
+  _class
+    Main
+    IO
+    "/Users/NCC1701-C/cool/LCARS/examples/hello_world.cl"
+    (
+    #2
+    _method
+      main
+      SELF_TYPE
+      #3
+      _dispatch
+        #3
+        _object
+          self
+        : _no_type
+        out_string
+        (
+        #3
+        _string
+          "Hello, World.\n"
+        : _no_type
+        )
+      : _no_type
+    )
++ '[' semant = backend ']'
++ '[' semant = all ']'
++ set +o pipefail
++ set +e
++ set +x

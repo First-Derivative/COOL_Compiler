@@ -1,0 +1,83 @@
+Testing semant
+Testsuite in /Users/NCC1701-C/cool/LCARS/testsuite/semant
+Results in /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant
+Results directory exists and will be overwritten.
+Building semant using /Users/NCC1701-C/cool/LCARS/bin/testscripts/semant/buildtest
+Testing semant using /Users/NCC1701-C/cool/LCARS/bin/testscripts/semant/runtest
+FAIL: testsuite/semant/anattributenamedself.test
+FAIL: testsuite/semant/assignment.test
+FAIL: testsuite/semant/assignnoconform.test
+FAIL: testsuite/semant/attrbadinit.test
+FAIL: testsuite/semant/attroverride.test
+FAIL: testsuite/semant/badargs1.test
+FAIL: testsuite/semant/badarith.test
+FAIL: testsuite/semant/baddispatch.test
+FAIL: testsuite/semant/badequalitytest.test
+FAIL: testsuite/semant/badequalitytest2.test
+FAIL: testsuite/semant/badmethodcallsitself.test
+FAIL: testsuite/semant/badredefineint.test
+FAIL: testsuite/semant/badstaticdispatch.test
+FAIL: testsuite/semant/badwhilebody.test
+FAIL: testsuite/semant/badwhilecond.test
+FAIL: testsuite/semant/basic.test
+FAIL: testsuite/semant/basicclassestree.test
+FAIL: testsuite/semant/caseidenticalbranch.test
+FAIL: testsuite/semant/cells.cl.test
+FAIL: testsuite/semant/classes.test
+FAIL: testsuite/semant/compare.test
+FAIL: testsuite/semant/comparisons.test
+FAIL: testsuite/semant/cycleinmethods.test
+FAIL: testsuite/semant/dispatch.test
+FAIL: testsuite/semant/dupformals.test
+FAIL: testsuite/semant/expressionblock.test
+FAIL: testsuite/semant/forwardinherits.test
+FAIL: testsuite/semant/hairyscary.cl.test
+FAIL: testsuite/semant/if.test
+FAIL: testsuite/semant/inheritsObject.test
+FAIL: testsuite/semant/inheritsbool.test
+FAIL: testsuite/semant/inheritsselftype.test
+FAIL: testsuite/semant/inheritsstring.test
+FAIL: testsuite/semant/initwithself.test
+FAIL: testsuite/semant/io.test
+FAIL: testsuite/semant/isvoid.test
+FAIL: testsuite/semant/letbadinit.test
+FAIL: testsuite/semant/letinit.test
+FAIL: testsuite/semant/letnoinit.test
+FAIL: testsuite/semant/letself.test
+FAIL: testsuite/semant/letselftype.test
+FAIL: testsuite/semant/letshadows.test
+FAIL: testsuite/semant/list.cl.test
+FAIL: testsuite/semant/lubtest.test
+FAIL: testsuite/semant/methodcallsitself.test
+FAIL: testsuite/semant/methodnameclash.test
+FAIL: testsuite/semant/missingclass.test
+FAIL: testsuite/semant/neg.test
+FAIL: testsuite/semant/newselftype.test
+FAIL: testsuite/semant/nomain.test
+FAIL: testsuite/semant/objectdispatchabort.test
+FAIL: testsuite/semant/outofscope.test
+FAIL: testsuite/semant/overriderenamearg.test
+FAIL: testsuite/semant/overridingmethod.test
+FAIL: testsuite/semant/overridingmethod2.test
+FAIL: testsuite/semant/overridingmethod3.test
+FAIL: testsuite/semant/overridingmethod4.test
+FAIL: testsuite/semant/redefinedclass.test
+FAIL: testsuite/semant/redefinedobject.test
+FAIL: testsuite/semant/returntypenoexist.test
+FAIL: testsuite/semant/scopes.test
+FAIL: testsuite/semant/self-assignment.test
+FAIL: testsuite/semant/selfinformalparameter.test
+FAIL: testsuite/semant/selftypebadreturn.test
+FAIL: testsuite/semant/selftypeparameterposition.test
+FAIL: testsuite/semant/selftyperedeclared.test
+FAIL: testsuite/semant/signaturechange.test
+FAIL: testsuite/semant/simplearith.test
+FAIL: testsuite/semant/simplecase.test
+FAIL: testsuite/semant/staticdispatch.test
+FAIL: testsuite/semant/stringtest.test
+FAIL: testsuite/semant/subtypemethodreturn.test
+FAIL: testsuite/semant/trickyatdispatch.test
+FAIL: testsuite/semant/trickyatdispatch2.test
+Passed 0 of 74 tests for semant
+See /Users/NCC1701-C/cool/LCARS/assignments/pa2/testsuite/semant/test.log
+DONE

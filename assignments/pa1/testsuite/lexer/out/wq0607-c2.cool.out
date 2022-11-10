@@ -1,0 +1,4 @@
+#3 STRING_CONST (*
+#3 ERROR "Unmatched *)"
+#3 STRING_CONST *)(*
+#5 EOF <EOF>

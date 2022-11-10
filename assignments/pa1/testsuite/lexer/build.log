@@ -1,0 +1,40 @@
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ SRC_DIR=/Users/NCC1701-C/cool/LCARS/src
++ component=lexer
++ cd /Users/NCC1701-C/cool/LCARS/assignments/pa1
++ buildme lexer
++ set -e
++ set -o pipefail
++ component=all
++ '[' 1 -ge 1 ']'
++ '[' lexer = lexer ']'
++ component=frontend
+++ dirname /Users/NCC1701-C/cool/LCARS/bin/buildme
++ COOL_DIR=/Users/NCC1701-C/cool/LCARS/bin/..
+++ cd /Users/NCC1701-C/cool/LCARS/bin/..
+++ pwd
++ COOL_DIR=/Users/NCC1701-C/cool/LCARS
+++ pwd
++ BUILD_DIR=/Users/NCC1701-C/cool/LCARS/assignments/pa1
++ SRC_DIR=/Users/NCC1701-C/cool/LCARS/src
++ ANTLR_JAR=/Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar
++ CLASSPATH=/Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar:
++ JAVA_SRC_FILE_LIST='/Users/NCC1701-C/cool/LCARS/src/ast/*.java     /Users/NCC1701-C/cool/LCARS/src/ast/visitor/*.java     /Users/NCC1701-C/cool/LCARS/src/Flags.java     /Users/NCC1701-C/cool/LCARS/src/Utilities.java     /Users/NCC1701-C/cool/LCARS/src/StringTable.java     /Users/NCC1701-C/cool/LCARS/src/TreeConstants.java     /Users/NCC1701-C/cool/LCARS/src/ASTBuilder.java     /Users/NCC1701-C/cool/LCARS/src/CoolErrorListener.java     /Users/NCC1701-C/cool/LCARS/src/CoolErrorStrategy.java     /Users/NCC1701-C/cool/LCARS/src/Frontend.java'
++ '[' frontend '!=' frontend ']'
++ '[' frontend '!=' frontend ']'
++ ANTLR='java -jar /Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar'
++ java -jar /Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar -o /Users/NCC1701-C/cool/LCARS/assignments/pa1 -listener -visitor -lib /Users/NCC1701-C/cool/LCARS/src /Users/NCC1701-C/cool/LCARS/src/CoolParser.g4 /Users/NCC1701-C/cool/LCARS/src/CoolLexer.g4
++ '[' frontend '!=' frontend ']'
++ tee build.log
++ javac -cp /Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar: -d /Users/NCC1701-C/cool/LCARS/assignments/pa1/ /Users/NCC1701-C/cool/LCARS/src/ast/AssignNode.java /Users/NCC1701-C/cool/LCARS/src/ast/AttributeNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BinopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BlockNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BoolBinopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BoolConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BoolUnopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/BranchNode.java /Users/NCC1701-C/cool/LCARS/src/ast/CaseNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ClassNode.java /Users/NCC1701-C/cool/LCARS/src/ast/CompNode.java /Users/NCC1701-C/cool/LCARS/src/ast/CondNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/DispatchNode.java /Users/NCC1701-C/cool/LCARS/src/ast/DivideNode.java /Users/NCC1701-C/cool/LCARS/src/ast/EqNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ExpressionNode.java /Users/NCC1701-C/cool/LCARS/src/ast/FeatureNode.java /Users/NCC1701-C/cool/LCARS/src/ast/FormalNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IntBinopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IntConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IntUnopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/IsVoidNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LEqNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LTNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LetNode.java /Users/NCC1701-C/cool/LCARS/src/ast/LoopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/MethodNode.java /Users/NCC1701-C/cool/LCARS/src/ast/MulNode.java /Users/NCC1701-C/cool/LCARS/src/ast/NegNode.java /Users/NCC1701-C/cool/LCARS/src/ast/NewNode.java /Users/NCC1701-C/cool/LCARS/src/ast/NoExpressionNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ObjectNode.java /Users/NCC1701-C/cool/LCARS/src/ast/PlusNode.java /Users/NCC1701-C/cool/LCARS/src/ast/ProgramNode.java /Users/NCC1701-C/cool/LCARS/src/ast/StaticDispatchNode.java /Users/NCC1701-C/cool/LCARS/src/ast/StringConstNode.java /Users/NCC1701-C/cool/LCARS/src/ast/SubNode.java /Users/NCC1701-C/cool/LCARS/src/ast/Symbol.java /Users/NCC1701-C/cool/LCARS/src/ast/Tree.java /Users/NCC1701-C/cool/LCARS/src/ast/TreeNode.java /Users/NCC1701-C/cool/LCARS/src/ast/UnopNode.java /Users/NCC1701-C/cool/LCARS/src/ast/visitor/BaseVisitor.java /Users/NCC1701-C/cool/LCARS/src/ast/visitor/DumpVisitor.java /Users/NCC1701-C/cool/LCARS/src/ast/visitor/TreeVisitor.java /Users/NCC1701-C/cool/LCARS/src/Flags.java /Users/NCC1701-C/cool/LCARS/src/Utilities.java /Users/NCC1701-C/cool/LCARS/src/StringTable.java /Users/NCC1701-C/cool/LCARS/src/TreeConstants.java /Users/NCC1701-C/cool/LCARS/src/ASTBuilder.java /Users/NCC1701-C/cool/LCARS/src/CoolErrorListener.java /Users/NCC1701-C/cool/LCARS/src/CoolErrorStrategy.java /Users/NCC1701-C/cool/LCARS/src/Frontend.java CoolLexer.java CoolParser.java CoolParserBaseListener.java CoolParserBaseVisitor.java CoolParserListener.java CoolParserVisitor.java
++ '[' frontend = frontend ']'
++ echo 'java -cp .:/Users/NCC1701-C/cool/LCARS/lib/antlr-4.6-complete.jar: Frontend $@'
++ chmod +x myfrontend
++ echo 'lexer $@ | parser $@'
++ chmod +x reffrontend
++ '[' frontend = semant ']'
++ '[' frontend = backend ']'
++ '[' frontend = all ']'
++ set +o pipefail
++ set +e
++ set +x

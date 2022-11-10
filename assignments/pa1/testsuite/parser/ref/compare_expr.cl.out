@@ -1,0 +1,31 @@
+#1
+_program
+  #1
+  _class
+    Foo
+    Object
+    "/Users/NCC1701-C/cool/LCARS/testsuite/parser/compare_expr.cl"
+    (
+    #2
+    _method
+      f
+      Bool
+      #3
+      _leq
+        #3
+        _int
+          3
+        : _no_type
+        #3
+        _plus
+          #3
+          _int
+            3
+          : _no_type
+          #3
+          _int
+            1
+          : _no_type
+        : _no_type
+      : _no_type
+    )

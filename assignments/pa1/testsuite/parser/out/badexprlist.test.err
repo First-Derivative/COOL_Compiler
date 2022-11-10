@@ -1,0 +1,5 @@
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badexprlist.test", line 2: syntax error at or near CURLY_CLOSE = }
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badexprlist.test", line 2: syntax error at or near CURLY_CLOSE = }
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badexprlist.test", line 3: syntax error at or near SEMICOLON = ;
+"/Users/NCC1701-C/cool/LCARS/testsuite/parser/badexprlist.test", line 3: syntax error at or near CURLY_CLOSE = }
+Compilation halted due to lex and parse errors
